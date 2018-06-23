@@ -4,7 +4,7 @@
 -->
 <html>
 	<head>
-		<title>PE: Seguimiento</title>
+		<title>EP: Seguimiento</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -23,7 +23,7 @@
 						<ul>
 							<li><a href="index.html">Inicio</a></li>
 							<li><a href="asistencia.html">Asistencia</a></li>
-							<li><a href="#seguimiento">Seguimiento</a></li>
+							<li><a href="#fichacliente">Seguimiento</a></li>
 							<li><a href="clases.html">Clases</a></li>
 							<li><a href="rutinas.html">Rutinas</a></li>
 							<li><a href="../index.html">Cerrar Sesion</a></li>
@@ -36,23 +36,32 @@
 				<div id="wrapper">
 
 					<!-- datos del entrenador -->
-						<section id="seguimiento" class="wrapper">
+						<section id="fichacliente" class="wrapper">
 							<div class="inner">
 								<h1 class="major">Ficha de seguimiento</h1>
 								<section>
+								<h4>Marcelo Tinelli.</h4>
+								<div class="col-md-12" align="left">
+	        						<img class="img-responsive img-portfolio img-hover" src="img/perfil.jpg">
+	        					</div>
+								<p>
+									Nombre: Gerardo Sofovich <br/>
+									Fecha de Nacimiento: 10/01/1992 <br/>
+									Disciplina/s: Aerobox, Kickboxing, Taekwondo <br/>
+									Turno/s: Mañana, Tarde <br/>
+									Ingreso: 20/10/2013 <br/>
+								</p>
+
 									<h4>Buscar cliente</h4>
-									<p>Para acceder al seguimiento de un cliente ingrese el DNI o haga una nueva ficha</p>
-  									<ul class="actions small">
-    									<li><a href="fichacliente.html" class="button submit">Crear nueva ficha</a></li>
-    								</ul>
-									<form method="get" action="fichacliente.html">
+									<p>Para acceder al seguimiento de un cliente ingrese el DNI.</p>
+									<form method="get" action="seguimiento.html">
 										<div class="field half first">
 											<label for="dni">DNI</label>
 											<input type="tel" name="dni" id="dni" />
 										</div>
 								        <div>
 										<br />
-										<li><a href="fichacliente.html" class="button submit">Buscar</a></li>
+										<a href="fichacliente.html" class="button submit">Buscar</a>
 										</div>
 									</form>
 								</section>
