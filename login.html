@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic</title>
+		<title>ENERGYM: Login</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -27,8 +27,8 @@
 							<li><a href="index.html">Quienes Somos</a></li>
 							<li><a href="index.html">Diciplinas</a></li>
 							<li><a href="index.html">Contacto</a></li>
-							<li><a href="#consultarseguimineto">Consulta Tu Seguimiento</a></li>
-							<li><a href="administracion.html">Administracion</a></li>
+							<li><a href="consultarseguimineto.html">Consulta Tu Seguimiento</a></li>
+							<li><a href="#login">Administracion</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -38,22 +38,27 @@
 			<div id="wrapper">
 
 				<!-- consultarseguimineto -->
-					<section id="consultarseguimineto" class="wrapper">
+					<section id="login" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Consulta Tu Seguimiento</h1>
-							<p>Para acceder a tu informacion por favor ingresa tu DNI en el siguiente espacio.</p>
-							<section>
-								<form method="get" action="seguimiento.html">
-									<div class="field half first">
-										<label for="dni">DNI</label>
-										<input type="tel" name="dni" id="dni" />
-									</div>
-							        <div>
-									<br />
-									<a href="seguimiento.html" class="button submit">Continuar</a>
-									</div>
-								</form>
-							</section>
+							<center><h1 class="major">Ingresar a Energym</h1><center/>
+							<!-- Form -->
+								<section>
+									<form method="post" action="#">
+										<div class="row uniform">
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="user" id="user" value="" placeholder="Usuario" />
+												<input type="password" name="pass" id="pass" value="" placeholder="Contraseña" />
+												<input type="checkbox" id="recordar" name="recordar">
+												<label for="recordar">Recordar mis Datos</label>
+											</div>
+											<div class="6u 12u$">
+												<ul class="actions">
+													<li><input type="submit" value="Iniciar Sesion" class="special" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
 						</div>
 					</section>
 			</div>
