@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>ENERGYM: Login</title>
+		<title>Generic</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -24,11 +24,11 @@
 					<p></p>
 						<ul>
 							<li><a href="index.html">Inicio</a></li>
-							<li><a href="index.html">Quienes Somos</a></li>
-							<li><a href="index.html">Diciplinas</a></li>
-							<li><a href="index.html">Contacto</a></li>
-							<li><a href="consultarseguimiento.html">Consulta Tu Seguimiento</a></li>
-							<li><a href="#login">Administracion</a></li>
+							<li><a href="index.html">Asistencia</a></li>
+							<li><a href="index.html">Eventos</a></li>
+							<li><a href="index.html">Diciplina</a></li>
+							<li><a href="#consultarseguimineto">Clientes</a></li>
+							<li><a href="administracion.html">Cerrar Sesion</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -38,23 +38,22 @@
 			<div id="wrapper">
 
 				<!-- consultarseguimineto -->
-					<section id="login" class="wrapper">
+					<section id="consultarseguimineto" class="wrapper">
 						<div class="inner">
-							<center><h1 class="major">Ingresar a Energym</h1><center/>
-							<!-- Form -->
-								<section>
-									<form method="post" action="#">
-										<div class="row uniform">
-											<div class="6u 12u$(xsmall)">
-												<input type="text" name="user" id="user" value="" placeholder="Usuario" />
-												<input type="password" name="pass" id="pass" value="" placeholder="Contraseña" />
-												<input type="checkbox" id="recordar" name="recordar">
-												<label for="recordar">Recordar mis Datos</label>
-												<input type="submit" value="Iniciar Sesion" class="special" />
-											</div>
-										</div>
-									</form>
-								</section>
+							<h1 class="major">Consulta Tu Seguimiento</h1>
+							<p>Para acceder a tu informacion por favor ingresa tu DNI en el siguiente espacio.</p>
+							<section>
+								<form method="get" action="seguimiento.html">
+									<div class="field half first">
+										<label for="dni">DNI</label>
+										<input type="tel" name="dni" id="dni" />
+									</div>
+							        <div>
+									<br />
+									<a href="seguimiento.html" class="button submit">Continuar</a>
+									</div>
+								</form>
+							</section>
 						</div>
 					</section>
 			</div>
