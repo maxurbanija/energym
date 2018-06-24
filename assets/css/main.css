@@ -3944,7 +3944,7 @@ table .color-celda {
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 240px;
+    width: 150px;
     background-color: #312450;
     color: #fff;
     text-align: center;
