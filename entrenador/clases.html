@@ -1,12 +1,10 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Pagina de clientes
 -->
 <html>
 	<head>
-		<title>Panel Secretaria</title>
+		<title>PE: Clases</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -19,15 +17,15 @@
 			<section id="sidebar">
 
 				<div class="inner">
-					<img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40">
+					<img src="images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40">
 					<nav>
 					<p></p>
 						<ul>
-							<li><a href="#wrapper">Inicio</a></li>
-							<li><a href="clientes.html">Clientes</a></li>
-							<li><a href="entrenadores.html">Entrenadores</a></li>
-							<li><a href="disciplinas.html">Disciplinas</a></li>
-							<li><a href="eventos.html">Eventos</a></li>
+							<li><a href="home.html">Inicio</a></li>
+							<li><a href="asistencia.html">Asistencia</a></li>
+							<li><a href="seguimiento.html">Seguimiento</a></li>
+							<li><a href="#clases">Clases</a></li>
+							<li><a href="rutinas.html">Rutinas</a></li>
 							<li><a href="../index.html">Cerrar Sesion</a></li>
 						</ul>
 					</nav>
@@ -35,17 +33,31 @@
 			</section>
 
 		<!-- Wrapper -->
-			<div id= "wrapper" class="align-center">
-				<br>
-				<br>
+			<div id="wrapper">
+
 				<!-- consultarseguimineto -->
-
-					<img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" width="80%">
-
+					<section id="clases" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Consulta Tu Seguimiento</h1>
+							<p>Para acceder a tu informacion por favor ingresa tu DNI en el siguiente espacio.</p>
+							<section>
+								<form method="get" action="seguimiento.html">
+									<div class="field half first">
+										<label for="dni">DNI</label>
+										<input type="tel" name="dni" id="dni" />
+									</div>
+							        <div>
+									<br />
+									<a href="seguimiento.html" class="button submit">Continuar</a>
+									</div>
+								</form>
+							</section>
+						</div>
+					</section>
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt pie">
+			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">G6 Mates</a></li>

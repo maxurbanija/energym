@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Seguimiento</title>
+		<title>Energym: Redireccionando</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -15,51 +15,42 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-		<!-- Sidebar -->
-			<section id="sidebar">
-
-				<div class="inner">
-					<a href="index.html" ><img src="images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40"></a>
-					<nav>
-					<p></p>
-						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="index.html">Quienes Somos</a></li>
-							<li><a href="index.html">Diciplinas</a></li>
-							<li><a href="index.html">Contacto</a></li>
-							<li><a href="#consultarseguimineto">Consulta Tu Seguimiento</a></li>
-							<li><a href="login.html">Administracion</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-
 		<!-- Wrapper -->
 			<div id="wrapper">
-
-				<!-- consultarseguimineto -->
-					<section id="consultarseguimineto" class="wrapper">
+				<!-- REDIRECCIONADO -->
+					<section id="redireccionado" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Consulta Tu Seguimiento</h1>
-							<p>Para acceder a tu informacion por favor ingresa tu DNI en el siguiente espacio.</p>
-							<section>
-								<form method="post" action="seguimiento.php">
-									<div class="field half first">
-										<label for="dni">DNI</label>
-										<input type="tel" name="dni" id="dni" />
-									</div>
-							        <div>
-									<br />
-									<a href="seguimiento.html" class="button submit">Continuar</a>
-									</div>
-								</form>
-							</section>
-						</div>
+                            <?php
+                            switch ($_POST['user']) {
+                                case "gerente":
+                                    header("Location: gerente/home.html");
+                                    die();
+                                case "secretaria":
+                                    header("Location: secretaria/home.html");
+                                    die();
+                                case "entrenador":
+                                    header("Location: entrenador/home.html");
+                                    die();
+                                default:
+                                    ?>
+                                    <script>
+                                    alert('Usuario incorrecto.')
+                                    window.location='login.html'
+                                    </script>
+                                    <?php
+
+                            }
+                            ?>
+
+
+
+
+                        </div>
 					</section>
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt pie">
+			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">G6 Mates</a></li>
