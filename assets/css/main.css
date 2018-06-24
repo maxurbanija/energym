@@ -3918,6 +3918,52 @@
 
 		}
 
+.current-day {
+	color: #e66b6b;
+}
+
+.prev-month,
+.next-month {
+	color: #cacaca;
+	text-align: left;
+}
+
+table .color-celda {
+	background-color:grey;
+	color:black;
+}
+
+/* Tooltip */
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #312450;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
 .pie {
 	position: absolute;
   right: 0;
@@ -3926,4 +3972,6 @@
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
+
 }
+
