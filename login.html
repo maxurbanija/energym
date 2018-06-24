@@ -23,10 +23,10 @@
 					<nav>
 					<p></p>
 						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="index.html">Quienes Somos</a></li>
-							<li><a href="index.html">Diciplinas</a></li>
-							<li><a href="index.html">Contacto</a></li>
+							<li><a href="index.html#intro">Inicio</a></li>
+							<li><a href="index.html#quienesSomos">Quienes Somos</a></li>
+							<li><a href="index.html#disciplinas">Disciplinas</a></li>
+							<li><a href="index.html#contacto">Contacto</a></li>
 							<li><a href="consultarseguimiento.html">Consulta Tu Seguimiento</a></li>
 							<li><a href="#login">Administracion</a></li>
 						</ul>
@@ -37,20 +37,22 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- consultarseguimineto -->
+				<!-- Inicio de Sesion -->
 					<section id="login" class="wrapper">
 						<div class="inner">
-							<center><h1 class="major">Ingresar a Energym</h1><center/>
+							<h1 class="major">Ingresar a Energym</h1>
 							<!-- Form -->
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="autentificacion.php">
 										<div class="row uniform">
 											<div class="6u 12u$(xsmall)">
 												<input type="text" name="user" id="user" value="" placeholder="Usuario" />
-												<input type="password" name="pass" id="pass" value="" placeholder="Contraseña" />
-												<input type="checkbox" id="recordar" name="recordar">
 												<br/>
+												<input type="password" name="pass" id="pass" value="" placeholder="Contraseña" />
+												<br/>
+												<input type="checkbox" id="recordar" name="recordar">
 												<label for="recordar">Recordar mis Datos</label>
+												<br/>
 												<br/>
 												<input type="submit" value="Iniciar Sesion" class="special" />
 												<br/>
