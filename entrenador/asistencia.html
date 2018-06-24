@@ -38,7 +38,10 @@
 							<div class="inner">
 								<h1 class="major">Asistencias</h1>
 								<section>
-								<h4>Tabla de asistencia 25/05/2018</h4>
+								<script type="text/javascript">
+									var d = new Date();
+									document.write('Tabla de asistencia de '+d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+								</script>
 								<select name="demo-category" id="demo-category">
 									<option value="">- Disciplina -</option>
 									<option value="1">Aerobox</option>
@@ -62,11 +65,10 @@
 										<section>
 											<form method="get" action="seguimiento.html">
 												<div class="field half first">
-													<label for="dni">DNI</label>
+													<label for="dni"></label>
 													<input type="tel" name="dni" id="dni" />
 												</div>
 										  		<div>
-													<br />
 													<a href="seguimiento.html" class="button submit">Buscar</a>
 												</div>
 											</form>
@@ -149,13 +151,13 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
