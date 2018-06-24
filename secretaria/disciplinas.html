@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Panel Secretaria</title>
+		<title>PS: Disciplinas</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -23,10 +23,10 @@
 					<nav>
 					<p></p>
 						<ul>
-							<li><a href="#wrapper">Inicio</a></li>
+							<li><a href="home.html">Inicio</a></li>
 							<li><a href="clientes.html">Clientes</a></li>
 							<li><a href="entrenadores.html">Entrenadores</a></li>
-							<li><a href="disciplinas.html">Disciplinas</a></li>
+							<li><a href="#verdisciplinas">Disciplinas</a></li>
 							<li><a href="eventos.html">Eventos</a></li>
 							<li><a href="../index.html">Cerrar Sesion</a></li>
 						</ul>
@@ -35,14 +35,48 @@
 			</section>
 
 		<!-- Wrapper -->
-			<div id= "wrapper" class="align-center">
-				<br>
-				<br>
-				<!-- consultarseguimineto -->
+			<div id="wrapper">
 
-					<img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" width="80%">
-
-			</div>
+				<!-- mostrar diciplinas con horarios y cupos -->
+					<section id= "verdisciplinas">
+						
+							<h1 class="major">Disciplinas</h1>
+							
+							
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Disciplina</th>
+													<th>Horario</th>
+													<th>Ocupacion</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Zumba</td>
+													<td>Lunes, miércoles y viernes de 15:30hs a 16:30hs</td>
+													<td>10/30</td>
+												</tr>
+												<tr>
+													<td>Complemento</td>
+													<td>Lunes a viernes de 08:00hs a 23:00hs</td>
+													<td>50</td>
+												</tr>
+												<tr>
+													<td>Yoga</td>
+													<td>Lunes a viernes de 08:00hs a 10:00hs</td>
+													<td>5/20</td>
+												</tr>
+												<tr>
+													<td>Kick Boxing</td>
+													<td>Martes y Jueves de 17:30hs a 19:30hs</td>
+													<td>10/20</td>
+												</tr>
+											</tbody>
+						
+					</section>
+			
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt pie">
@@ -52,6 +86,7 @@
 					</ul>
 				</div>
 			</footer>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
