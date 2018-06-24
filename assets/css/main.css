@@ -1851,8 +1851,6 @@
 		text-align: right;
 	}
 
-
-
 /* Box */
 
 	.box {
@@ -3919,7 +3917,6 @@
 			}
 
 		}
-
 .current-day {
 	color: #e66b6b;
 }
@@ -3964,8 +3961,6 @@ table .color-celda {
     visibility: visible;
 }
 
-
-
 .pie {
 	position: absolute;
   right: 0;
@@ -3974,6 +3969,4 @@ table .color-celda {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
-
 }
-
