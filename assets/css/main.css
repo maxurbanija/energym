@@ -3534,7 +3534,7 @@
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #261c3e;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3938,7 +3938,7 @@ table .color-celda {
 .tooltip {
     position: relative;
     display: inline-block;
-    
+
 }
 
 /* Tooltip text */
@@ -3967,6 +3967,5 @@ table .color-celda {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
   text-align: center;
 }
