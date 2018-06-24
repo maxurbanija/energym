@@ -1,12 +1,10 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Seguimiento diario visible al entrenador
 -->
 <html>
 	<head>
-		<title>PE: Rutinas</title>
+		<title>EP: Seguimiento</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -23,41 +21,55 @@
 					<nav>
 					<p></p>
 						<ul>
-							<li><a href="index.html">Inicio</a></li>
+							<li><a href="home.html">Inicio</a></li>
 							<li><a href="asistencia.html">Asistencia</a></li>
-							<li><a href="seguimiento.html">Seguimiento</a></li>
+							<li><a href="#fichacliente">Seguimiento</a></li>
 							<li><a href="clases.html">Clases</a></li>
-							<li><a href="#rutinas">Rutinas</a></li>
+							<li><a href="rutinas.html">Rutinas</a></li>
 							<li><a href="../index.html">Cerrar Sesion</a></li>
 						</ul>
 					</nav>
 				</div>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			<!-- perfil -->
+				<div id="wrapper">
 
-				<!-- consultarseguimineto -->
-					<section id="rutinas" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Consulta Tu Seguimiento</h1>
-							<p>Para acceder a tu informacion por favor ingresa tu DNI en el siguiente espacio.</p>
-							<section>
-								<form method="get" action="fichacliente.html">
-									<div class="field half first">
-										<label for="dni">DNI</label>
-										<input type="tel" name="dni" id="dni" />
-									</div>
-							        <div>
-									<br />
-									<a href="fichacliente.html" class="button submit">Buscar</a>
-									</div>
-								</form>
-							</section>
-							<a href="javascript:window.history.go(-1);" class="button submit">volver</a>
-						</div>
-					</section>
-			</div>
+					<!-- datos del entrenador -->
+						<section id="fichacliente" class="wrapper">
+							<div class="inner">
+								<h1 class="major">Ficha de seguimiento</h1>
+								<section>
+								<h4>Eve Jackson</h4>
+								<div class="col-md-12" align="left">
+	        						<img class="img-responsive img-portfolio img-hover" src="img/perfil.jpg">
+	        					</div>
+								<p>
+									Nombre: Eve jackson <br/>
+									Fecha de Nacimiento: 10/01/1944 <br/>
+									Disciplina/s: No habilitado <br/>
+									Turno/s: No habilitado <br/>
+									Ingreso: 20/10/2017 <br/>
+									Esta persona aún no ha presentado su ficha médica a secretaría.
+								</p>
+
+									<h4>Buscar cliente</h4>
+									<p>Para acceder al seguimiento de un cliente ingrese el DNI.</p>
+									<form method="get" action="seguimiento.html">
+										<div class="field half first">
+											<label for="dni">DNI</label>
+											<input type="tel" name="dni" id="dni" />
+										</div>
+								        <div>
+										<br />
+										<a href="fichacliente.html" class="button submit">Buscar</a>
+										</div>
+									</form>
+								</section>
+								<a href="javascript:window.history.go(-1);" class="button submit">volver</a>
+							</div>
+						</section>
+				</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">

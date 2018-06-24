@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>PE: Rutinas</title>
+		<title>PS: Nuevo Cliente</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -17,18 +17,17 @@
 	<body>
 		<!-- Sidebar -->
 			<section id="sidebar">
-
 				<div class="inner">
 					<img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40">
 					<nav>
 					<p></p>
 						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="asistencia.html">Asistencia</a></li>
-							<li><a href="seguimiento.html">Seguimiento</a></li>
-							<li><a href="clases.html">Clases</a></li>
-							<li><a href="#rutinas">Rutinas</a></li>
-							<li><a href="../index.html">Cerrar Sesion</a></li>
+							<li><a >Inicio</a></li>
+							<li><a href="#nuevocliente">Clientes</a></li>
+							<li><a >Entrenadores</a></li>
+							<li><a >Disciplinas</a></li>
+							<li><a >Eventos</a></li>
+
 						</ul>
 					</nav>
 				</div>
@@ -37,24 +36,40 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- consultarseguimineto -->
-					<section id="rutinas" class="wrapper">
+				<!-- Crear Nuevo Cliente -->
+					<section id= "nuevocliente">
 						<div class="inner">
-							<h1 class="major">Consulta Tu Seguimiento</h1>
-							<p>Para acceder a tu informacion por favor ingresa tu DNI en el siguiente espacio.</p>
+							<h1 class="major align-center">Crear Nuevo Cliente</h1>
+							
 							<section>
-								<form method="get" action="fichacliente.html">
-									<div class="field half first">
-										<label for="dni">DNI</label>
-										<input type="tel" name="dni" id="dni" />
-									</div>
-							        <div>
-									<br />
-									<a href="fichacliente.html" class="button submit">Buscar</a>
-									</div>
-								</form>
+								<h2>Ingrese los siguientes datos:</h2>
+									<form method="post align-center" action="clientes.html">
+										<div class="row uniform align-center">
+											<div class="6u 12u$(xsmall) align-center">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre y Apellido" />
+												<br/>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="DNI" />
+												<br/>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Teléfono" />
+												<br/>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" />
+												<br/>
+											
+												<div class="6u$ 12u$(small) align-center">
+													<input type="checkbox" id="demo-message" name="demo-message" checked>
+													<label for="demo-message">Ficha Médica</label>
+												</div>
+
+											<ul class="actions">
+													<li><a href="clientes.html" class="button">Volver</a></li>
+													<li><a href="clientes.html" class="button icon fa-save">Guardar</a></li>
+													
+											</ul>
+
+											</div>
+										</div>
+									</form>
 							</section>
-							<a href="javascript:window.history.go(-1);" class="button submit">volver</a>
 						</div>
 					</section>
 			</div>
