@@ -3218,6 +3218,10 @@
 		position: relative;
 	}
 
+	ul{
+		list-style: none;
+	}
+
 		.wrapper > .inner {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
