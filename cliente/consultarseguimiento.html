@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>PS: Más Información</title>
+		<title>ENERGYM: Ingresar</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -19,12 +19,17 @@
 			<section id="sidebar">
 
 				<div class="inner">
-					<img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40">
+					<a href="../index.html" ><img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40"></a>
 					<br/><br/><br/>
 					<nav>
 
 						<ul>
-							<li><a href="eventos.html">Eventos</a></li>
+							<li><a href="../index.html#intro">Inicio</a></li>
+							<li><a href="../index.html#quienesSomos">Quienes Somos</a></li>
+							<li><a href="../index.html#disciplinas">Disciplinas</a></li>
+							<li><a href="../index.html#contacto">Contacto</a></li>
+							<li><a href="#consultarseguimiento">Consulta Tu Seguimiento</a></li>
+							<li><a href="../login.html">Administracion</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -33,42 +38,38 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- información de los eventos -->
-					<section id="informacióndeevento" class="wrapper">
+				<!-- consultarseguimineto -->
+					<section id="consultarseguimiento" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Información del Evento</h1>
+							<h1 class="major">Consulta Tu Seguimiento</h1>
+							<p>Para acceder a tu informacion por favor ingresa tu DNI en el siguiente espacio.</p>
 							<section>
-									<div class="row">
-										<div class="6u 12u$(medium)">
-											<ul class="alt">
-												<li>Nombres de los entrenadores designados.</li>
-												<li>Nombre de la disciplina</li>
-												<li>Fecha y horario.</li>
-												<li>Lugar.</li>
-											</ul>
-										</div>
+								<form method="post" action="fichacliente.html">
+									<div class="field half first tooltip">
+										<label>DNI</label><input type="tel" name="dni" id="dni"/>
+										<span class="tooltiptext">Ingresa tu DNI aqui.</span>
 									</div>
+									<br/>
+									<a class="button submit">Continuar</a>
+								</form>
 							</section>
 						</div>
 					</section>
-					<ul class="actions">
-						<li><a href="eventos.html" class="button align-center">Volver</a></li>
-					</ul>
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
+			<footer id="footer" class="wrapper alt pie">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">G6 Mates</a></li>
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://energym.66ghz.com">G6 Mates</a></li>
 					</ul>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
 			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
 			<script src="../assets/js/skel.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->

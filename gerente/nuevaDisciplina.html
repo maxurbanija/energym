@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>ENERGYM: Login</title>
+		<title>PG: Nueva Disciplina</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -18,16 +18,16 @@
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
-					<a href="index.html" ><img src="images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40"></a>
+					<img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40">
 					<br/><br/><br/>
 					<nav>
 						<ul>
-							<li><a href="index.html#intro">Inicio</a></li>
-							<li><a href="index.html#quienesSomos">Quienes Somos</a></li>
-							<li><a href="index.html#disciplinas">Disciplinas</a></li>
-							<li><a href="index.html#contacto">Contacto</a></li>
-							<li><a href="cliente/consultarseguimiento.html">Consulta Tu Seguimiento</a></li>
-							<li><a href="#login">Administracion</a></li>
+							<li><a >Inicio</a></li>
+							<li><a>Empleados</a></li>
+							<li><a>Clientes</a></li>
+							<li><a>Empleados</a></li>
+							<li><a href="#nuevaDisciplina">Disciplinas</a></li>
+							<li><a>Eventos</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -35,29 +35,32 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-				<!-- Inicio de Sesion -->
-					<section id="login" class="wrapper">
+
+				<!-- Crear Nuevo Cliente -->
+					<section id= "nuevaDisciplina">
 						<div class="inner">
-							<h1 class="major">Ingresar a Energym</h1>
-							<!-- Datos -->
-								<section>
-									<form method="post" action="autentificacion.php">
-										<div class="row uniform">
-											<div class="6u 12u$(xsmall)">
-												<input type="text" name="user" id="user" value="" placeholder="Usuario" />
+							<h1 class="major align-center">Cargar Nueva Disciplina</h1>
+
+							<section>
+								<h2>Ingrese los siguientes datos:</h2>
+									<form method="post align-center" action="clientes.html">
+										<div class="row uniform align-center">
+											<div class="6u 12u$(xsmall) align-center">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Disciplina" />
 												<br/>
-												<input type="password" name="pass" id="pass" value="" placeholder="Contraseña" />
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Costo" />
 												<br/>
-												<input type="checkbox" id="recordar" name="recordar">
-												<label for="recordar">Recordar mis Datos</label>
-												<br/>
-												<br/>
-												<input type="submit" value="Iniciar Sesion" class="special" />
-												<br/>
+
+											<ul class="actions">
+													<li><a href="disciplinas.html" class="button">Volver</a></li>
+													<li><a href="disciplinas.html" class="button icon fa-save">Guardar</a></li>
+
+											</ul>
+
 											</div>
 										</div>
 									</form>
-								</section>
+							</section>
 						</div>
 					</section>
 			</div>
