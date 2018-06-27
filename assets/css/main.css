@@ -2474,7 +2474,7 @@
 				line-height: 1.58125em;
 				position: absolute;
 				text-align: center;
-				top: 0;
+				top: -7px;
 				width: 1.65em;
 			}
 
@@ -3958,11 +3958,12 @@ table .color-celda {
 
     /* Position the tooltip text - see examples below! */
     position: absolute;
-	top: 30px;
+	top: 0px;
 	left: 0px;
 	right: auto;
-    z-index: 2;
+    z-index: 1;
 }
+
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
@@ -3975,5 +3976,5 @@ table .color-celda {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  text-align: center;
+
 }

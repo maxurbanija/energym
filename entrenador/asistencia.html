@@ -33,100 +33,202 @@
 			<!-- Wrapper -->
 				<div id="wrapper">
 
-					<!-- consultarseguimineto -->
+					<!--Asistencia-->
 						<section id="asistencia" class="wrapper">
 							<div class="inner">
-								<h1 class="major">Asistencias</h1>
-								<section>
-								<script type="text/javascript">
+								<h1 class="major"><script type="text/javascript">
 									var d = new Date();
-									document.write('Tabla de asistencia de '+d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
-								</script>
-								<select name="demo-category" id="demo-category">
-									<option value="">- Disciplina -</option>
-									<option value="1">Aerobox</option>
-									<option value="1">Boxeo</option>
-									<option value="1">Taekwondo</option>
-								</select>
-									</br>
-								<select name="demo-category" id="demo-category">
-									<option value="">- Turno -</option>
-									<option value="1">Mañana</option>
-									<option value="1">Tarde</option>
-									<option value="1">Noche</option>
-								</select>
-								<p></br>
-								La tabla con los datos aparece tras seleccionar la disciplina y el turno</br>
-								</p>
-								<!-- consultarseguimineto -->
-									<div class="inner">
-										<a href="seguimiento.html" class="button submit">Buscar un cliente</a>
-										<a href="asistencia semanal.html" class="button submit">Semanal</a>
+									document.write('Asistencia del '+d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+								</script></h1>
+								<section>
+									<div class="">
+										<a href="seguimiento.html" class="button">Buscar un cliente</a>
 									</div>
-								</br>
-								<table style="width:100%">
-	 								<tr>
-	  								 <th>DNI</th>
-	  								 <th>Nombre</th>
-	  								 <th>Apellido</th>
-									 <th>Edad</th>
-									 <th>Asistio</th>
-									 <th>Ficha de seguimiento</th>
-									</tr>
-	 								<tr>
-	  								  <th>22000123</th>
-	 								  <td>Jill</td>
-	 								  <td>Smith</td>
-									  <td>109</td>
-									  <td>
-									  <div class="4u 12u$(small)">
-								 		<input type="radio" id="a1" name="a1">
-										<label for="a1"></label>
-									  </div>
-									  </td>
- 									  <th>
-										<ul class="actions small">
-  											<li><a href="crear ficha.html" class="button small">Crear</a></li>
-  										</ul>
-									  </th>
-	 								</tr>
-	 								<tr>
-	  								  <th>33111456</th>
-	 								  <td>Eve</td>
-									  <td>Jackson</td>
-									  <td>74</td>
-									  <td>
-									  <div class="4u 12u$(small)">
-								 		<input type="radio" id="a2" name="a2">
-										<label for="a2"></label>
-									  </div>
-									  </td>
-									  <td>
-										<ul class="actions small">
-  											<li><a href="Sin Ficha.html" class="button small">Sin FM</a></li>
-  										</ul>
-									  </td>
-									</tr>
-	 								<tr>
-									  <th>29999999</th>
-	 								  <td>Marcelo</td>
-									  <td>Tinelli</td>
-									  <td>94</td>
-									  <td>
-									  <div class="4u 12u$(small)">
-								 		<input type="radio" id="a3" name="a3">
-										<label for="a3"></label>
-									  </div>
-									  </td>
- 									  <th>
-										<ul class="actions small">
-  											<li><a href="fichacliente.html" class="button small">Ver</a></li>
-  										</ul>
-									  </th>
-									</tr>
-								</table>
+									<br/>
+									<h3>O Seleccione una Disciplina para ver la lista</h3>
+									<select name="disciplinas" id="dis1" onchange="desocultatur(this.options[this.selectedIndex].value)">
+										<option value="0">- Disciplina -</option>
+										<option value="1">Aerobox</option>
+										<option value="1">Boxeo</option>
+										<option value="1">Taekwondo</option>
+									</select>
+									</br>
+									<div  id="turnos" style="visibility: hidden" >
+										<h3>Seleccione un Turno para ver la lista</h3>
+										<select name="turnos" onchange="desoculta(this.options[this.selectedIndex].value)"  >
+											<option value="0">- Turno -</option>
+											<option value="1">Mañana</option>
+											<option value="1">Tarde</option>
+											<option value="1">Noche</option>
+										</select>
+									</div>
+									<br/>
+									<div  id="tablaasis" class="inner" style="visibility: hidden">
+										<a id="botdia" onclick="verAsis(1)" class="button disabled">Asistencia Diaria</a>
+										<a id="botsem" onclick="verAsis(2)" class="button">Asistencia Semanal</a>
+										<br/>
+										<br/>
+										<div id="tablasemanal" style="display: none">
+											<table style="width:100%">
+												<thead>
+													<tr>
+					  								 <th>Fecha</th>
+					  								 <th>25/06</th>
+					  								 <th>27/06</th>
+													 <th>29/06</th>
+													 <th>02/07</th>
+													 <th>04/07</th>
+													</tr>
+												</thead>
+												<tbody style="margin-top: -7px">
+													<tr>
+					  								  <td>Jill Smith</td>
+					 								  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="a25" name="a25">
+														<label for="a25"></label>
+													  </div>
+													  </td>
+					 								  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio"  checked="checked" disabled="disabled" id="a27" name="a27">
+														<label for="a27"></label>
+													  </div>
+													  </td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="a29" name="a29">
+														<label for="a29"></label>
+													  </div>
+													  </td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" checked="checked" disabled="disabled" id="a02" name="a02">
+														<label for="a02"></label>
+													  </div>
+													  </td>
+				 									  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="a04" name="a04">
+														<label for="a04"></label>
+													  </div>
+													  </td>
+					 								</tr>
+					 								<tr>
+					  								  <td>Eve Jackson</td>
+					 								  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="b1" name="b1">
+														<label for="b1"></label>
+													  </div>
+													  </td>
+					 								  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" checked="checked" disabled="disabled" id="b2" name="b2">
+														<label for="b2"></label>
+													  </div>
+													  </td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="b3" name="b3">
+														<label for="b3"></label>
+													  </div>
+													  </td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="b4" name="b4">
+														<label for="b4"></label>
+													  </div>
+													  </td>
+				 									  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="b5" name="b5">
+														<label for="b5"></label>
+													  </div>
+													  </td>
+					 								</tr><tr>
+					  								  <td>Marcelo Tinelli</td>
+					 								  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="c1" name="c1">
+														<label for="c1"></label>
+													  </div>
+													  </td>
+					 								  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" checked="checked" disabled="disabled" id="c2" name="c2">
+														<label for="c2"></label>
+													  </div>
+													  </td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="c3" name="c3">
+														<label for="c3"></label>
+													  </div>
+													  </td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" checked="checked"disabled="disabled" id="c4" name="c4">
+														<label for="c4"></label>
+													  </div>
+													  </td>
+				 									  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" disabled="disabled" id="c5" name="c5">
+														<label for="c5"></label>
+													  </div>
+													  </td>
+					 								</tr>
+												</tbody>
+											</table>
+										</div>
+										<div id="tabladiaria" style="display: block">
+											<table style="width:100%">
+												<thead>
+													<tr>
+														<th>DNI</th>
+														<th>Nombre</th>
+														<th>Apellido</th>
+														<th>Edad</th>
+														<th>Asistio</th>
+														<th>Ficha de seguimiento</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+													  <td>22000123</td>
+													  <td>Jill</td>
+													  <td>Smith</td>
+													  <td>109</td>
+													  <td><div class="4u 12u$(small)"><input type="radio" disabled="disabled" disabled="disabled" checked="checked" id="a1" name="a1"><label for="a1"></label></div></td>
+													  <td><a href="fichacliente.html" class="button small">Ver</a></td>
+													</tr>
+													<tr>
+													  <td>33111456</td>
+													  <td>Eve</td>
+													  <td>Jackson</td>
+													  <td>74</td>
+													  <td><div class="4u 12u$(small)"><input type="radio" disabled="disabled" id="a2" disabled="disabled" name="a2"><label for="a2"></label></div></td>
+													  <td><a href="SinFicha.html" class="button small">Sin FM</a></td>
+													</tr>
+													<tr>
+													  <td>29999999</td>
+													  <td>Marcelo</td>
+													  <td>Tinelli</td>
+													  <td>94</td>
+													  <td><div class="4u 12u$(small) "><input type="radio" disabled="disabled" disabled="disabled" checked="checked" id="a3" name="a3"><label for="a3"></label></div></td>
+													  <td><a href="fichacliente.html" class="button small">Ver</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</section>
-								<a href="javascript:window.history.go(-1);" class="button submit">volver</a>
+
+								<div class="align-center">
+									<a href="javascript:window.history.go(-1);" class="button">Volver</a>
+								</div>
+
 							</div>
 						</section>
 				</div>
@@ -148,6 +250,42 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+			<script>
+				function desocultatur(Combo) {
+    				var value = Combo;
+    				if (value == 1) {
+        				document.getElementById("turnos").style.visibility = "visible";
+    						} else {
+        				document.getElementById("turnos").style.visibility = "hidden";
+    					}
+					}
+			</script>
+			<script>
+				function desoculta(Combo) {
+    				var value = Combo;
+    				if (value == 1) {
+        				document.getElementById("tablaasis").style.visibility = "visible";
+    						} else {
+        				document.getElementById("tablaasis").style.visibility = "hidden";
+    					}
+					}
+			</script>
+			<script>
+				function verAsis(Combo) {
+    				var value = Combo;
+    				if (value == 1) {
+        				document.getElementById("tabladiaria").style.display = "block";
+						document.getElementById("botdia").classList.add('disabled');
+						document.getElementById("tablasemanal").style.display = "none";
+						document.getElementById("botsem").classList.remove('disabled');
+    						} else {
+        				document.getElementById("tablasemanal").style.display = "block";
+						document.getElementById("botsem").classList.add('disabled');
+						document.getElementById("tabladiaria").style.display = "none";
+						document.getElementById("botdia").classList.remove('disabled');
+    					}
+					}
+			</script>
 
 	</body>
 </html>
