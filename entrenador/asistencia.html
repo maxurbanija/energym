@@ -38,95 +38,74 @@
 							<div class="inner">
 								<h1 class="major">Asistencias</h1>
 								<section>
-								<script type="text/javascript">
-									var d = new Date();
-									document.write('Tabla de asistencia de '+d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
-								</script>
-								<select name="demo-category" id="demo-category">
+									<script type="text/javascript">
+										var d = new Date();
+										document.write('Tabla de asistencia de '+d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+									</script>
+									<select name="demo-category" id="demo-category">
 									<option value="">- Disciplina -</option>
 									<option value="1">Aerobox</option>
 									<option value="1">Boxeo</option>
 									<option value="1">Taekwondo</option>
 								</select>
 									</br>
-								<select name="demo-category" id="demo-category">
+									<select name="demo-category" id="demo-category">
 									<option value="">- Turno -</option>
 									<option value="1">Mañana</option>
 									<option value="1">Tarde</option>
 									<option value="1">Noche</option>
 								</select>
-								<p></br>
-								La tabla con los datos aparece tras seleccionar la disciplina y el turno</br>
-								</p>
-								<!-- consultarseguimineto -->
+									<br/>
+									<p>La tabla con los datos aparece tras seleccionar la disciplina y el turno</p>
+									<br/>
 									<div class="inner">
-										<a href="seguimiento.html" class="button submit">Buscar un cliente</a>
-										<a href="asistencia semanal.html" class="button submit">Semanal</a>
+										<a href="asistenciasemanal.html" class="button submit">Asistencia Semanal</a>
 									</div>
-								</br>
-								<table style="width:100%">
-	 								<tr>
-	  								 <th>DNI</th>
-	  								 <th>Nombre</th>
-	  								 <th>Apellido</th>
-									 <th>Edad</th>
-									 <th>Asistio</th>
-									 <th>Ficha de seguimiento</th>
-									</tr>
-	 								<tr>
-	  								  <th>22000123</th>
-	 								  <td>Jill</td>
-	 								  <td>Smith</td>
-									  <td>109</td>
-									  <td>
-									  <div class="4u 12u$(small)">
-								 		<input type="radio" id="a1" name="a1">
-										<label for="a1"></label>
-									  </div>
-									  </td>
- 									  <th>
-										<ul class="actions small">
-  											<li><a href="crear ficha.html" class="button small">Crear</a></li>
-  										</ul>
-									  </th>
-	 								</tr>
-	 								<tr>
-	  								  <th>33111456</th>
-	 								  <td>Eve</td>
-									  <td>Jackson</td>
-									  <td>74</td>
-									  <td>
-									  <div class="4u 12u$(small)">
-								 		<input type="radio" id="a2" name="a2">
-										<label for="a2"></label>
-									  </div>
-									  </td>
-									  <td>
-										<ul class="actions small">
-  											<li><a href="Sin Ficha.html" class="button small">Sin FM</a></li>
-  										</ul>
-									  </td>
-									</tr>
-	 								<tr>
-									  <th>29999999</th>
-	 								  <td>Marcelo</td>
-									  <td>Tinelli</td>
-									  <td>94</td>
-									  <td>
-									  <div class="4u 12u$(small)">
-								 		<input type="radio" id="a3" name="a3">
-										<label for="a3"></label>
-									  </div>
-									  </td>
- 									  <th>
-										<ul class="actions small">
-  											<li><a href="fichacliente.html" class="button small">Ver</a></li>
-  										</ul>
-									  </th>
-									</tr>
+									</br>
+									<table style="width:100%">
+									<thead>
+										<tr>
+		  									<th>DNI</th>
+		  									<th>Nombre</th>
+		  									<th>Apellido</th>
+										 	<th>Edad</th>
+										 	<th>Asistio</th>
+										 	<th>Ficha de seguimiento</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+		  								  <td>22000123</td>
+		 								  <td>Jill</td>
+		 								  <td>Smith</td>
+										  <td>109</td>
+										  <td><div class="4u 12u$(small)"><input type="radio" id="a1" name="a1"><label for="a1"></label></div></td>
+	 									  <td><a href="fichacliente.html" class="button small">Ver</a></td>
+		 								</tr>
+		 								<tr>
+		  								  <td>33111456</td>
+		 								  <td>Eve</td>
+										  <td>Jackson</td>
+										  <td>74</td>
+										  <td><div class="4u 12u$(small)"><input type="radio" id="a2" name="a2"><label for="a2"></label></div></td>
+										  <td><a href="SinFicha.html" class="button small">Sin FM</a></td>
+										</tr>
+		 								<tr>
+										  <td>29999999</td>
+		 								  <td>Marcelo</td>
+										  <td>Tinelli</td>
+										  <td>94</td>
+										  <td><div class="4u 12u$(small)"><input type="radio" id="a3" name="a3"><label for="a3"></label></div></td>
+	 									  <td><a href="fichacliente.html" class="button small">Ver</a></td>
+										</tr>
+									</tbody>
 								</table>
 								</section>
-								<a href="javascript:window.history.go(-1);" class="button submit">volver</a>
+								<div class="align-center">
+									<a href="javascript:window.history.go(-1);" class="button">Volver</a>
+									<a href="seguimiento.html" class="button submit">Buscar un cliente</a>
+								</div>
+
 							</div>
 						</section>
 				</div>
