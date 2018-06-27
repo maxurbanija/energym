@@ -39,24 +39,23 @@
 					<!-- datos del entrenador -->
 						<section id="seguimiento" class="wrapper">
 							<div class="inner">
-								<h1 class="major">Ficha de seguimiento</h1>
+								<h1 class="major">Buscar Cliente</h1>
 								<section>
-									<h4>Buscar cliente</h4>
-									<p>Para acceder al seguimiento de un cliente ingrese el DNI o haga una nueva ficha</p>
-  									<ul class="actions small">
-    									<li><a href="crearficha.html" class="button submit">Crear nueva ficha</a></li>
-    								</ul>
-									<form method="get" action="fichacliente.html">
-										<div class="field half first">
+									<h3>Para acceder al seguimiento de un cliente ingrese el DNI.</h3>
+									<form method="post" action="fichacliente.html">
+										<div class="6u field half first">
 											<label for="dni"></label>
 											<input type="tel" name="dni" id="dni"/>
 										</div>
-								        <div class="ALIGN-center">
-											<a href="fichacliente.html" class="button submit">Buscar</a>
-										</div>
+										<a  class="button submit">Buscar</a>
 									</form>
+									<h3>O puede crear una Ficha si no la tiene. </h3>
+									<div >
+										<a href="crearficha.html" class="button">Crear nueva ficha</a>
+									</div>
+									<br/>
 								</section>
-								<a href="javascript:window.history.go(-1);" class="button submit">volver</a>
+								<div class="align-center"><a href="javascript:window.history.go(-1);" class="button">Volver</a></div>
 							</div>
 						</section>
 				</div>

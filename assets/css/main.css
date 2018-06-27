@@ -2474,7 +2474,7 @@
 				line-height: 1.58125em;
 				position: absolute;
 				text-align: center;
-				top: 0;
+				top: -7px;
 				width: 1.65em;
 			}
 
@@ -3976,5 +3976,5 @@ table .color-celda {
   bottom: 0;
   left: 0;
   padding: 1rem;
- 
+
 }
