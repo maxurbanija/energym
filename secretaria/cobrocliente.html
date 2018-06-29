@@ -35,15 +35,22 @@
 							<div class="inner">
 								<h1 class="major">Cobro de Cuota</h1>
 								<section>
+
+									<div class="" style="margin-left: 750px">
+										<a href="historialdepagos.html" class="button">Ver Historial de Pagos</a>
+									</div>
 									<div align="center">
+
+										<h4>Nombre:   <code>Tinelli, Marcelo Edvar</code></h4>
 										<h4>DNI:   <code>33.285.355</code></h4>
-										<select  class="4u"name="cuotas" id="cuota" onchange="desoculta(this.options[this.selectedIndex].value)">
+										<select  class="4u" name="cuotas" id="cuota" onchange="desoculta(this.options[this.selectedIndex].value)">
 											<option value="0">- Seleccionar Cuota -</option>
 											<option value="1">Mayo</option>
 											<option value="1">Junio</option>
 											<option value="1">Julio</option>
 										</select>
 			        				</div>
+
 									<div id="detalle" class="inner" style="visibility:hidden">
 										<div class="box" style="margin:60px; margin-bottom:15px" >
 											<div class="row uniform">
@@ -85,7 +92,7 @@
 											</div>
 										</div>
 										<div class="align-left" style="margin-left: 80px">
-											<a href="ticket.pdf" target="_blank" class="button icon fa-save">Cobrar</a>
+											<a href="cobroexito.html" onclick="window.open('ticket.pdf');" class="button icon fa-save">Cobrar</a>
 
 										</div>
 									</div>
