@@ -40,6 +40,39 @@
 						<div class="inner">
 							<h1 class="major">Clientes</h1>
 							<p></p>
+							<div class="align-left">
+								<a href="nuevocliente.html" class="button">Nuevo Cliente</a>
+								<span style="margin-left:40px"></span>
+								<a href="historial.pdf" class="button"><img src="images/pdf.png" width="18px"> Imprimir</a>
+							</div>
+							<br/>
+							<div class="align-left" style="margin-bottom:10px">
+								<a onclick="desoculta(this)" class="button">Filtar</a>
+							</div>
+							<div id="filtro" class="" style="display:none;margin-left:20px">
+								<div>
+									<h4>Por:
+									<input style="width:12em;height: 1.8em;display:inline-block" type="text" name="Fini" placeholder="Nombre">
+									<input style="width:10em;display:inline-block" type="tel" name="Ffin" placeholder="DNI">
+									<select  class="2u" name="disciplinas" style="display:inline-block;height:1.8em" id="disciplinas" >
+										<option value="0">- Disciplinas-</option>
+										<option value="1">Complemento</option>
+										<option value="1">Funcional</option>
+										<option value="1">Aerobox</option>
+										<option value="1">Spinning</option>
+										<option value="1">KickBoxing</option>
+										<option value="1">TaekWondo</option>
+										<option value="1">Yoga</option>
+										<option value="1">Zumba</option>
+									</select>
+									<select  class="2u" name="moroso" style="display:inline-block;height:1.8em" id="moroso" >
+										<option value="0">- Todos -</option>
+										<option value="1">Morosos</option>
+										<option value="1">No Morosos</option>
+									</select>
+									</h4>
+								</div>
+							</div>
 							<section>
 								<h2></h2>
 								<h3></h3>
@@ -59,11 +92,11 @@
 												</thead>
 												<tbody>
 													<tr>
-														<td>Bruno Feresin</td>
+														<td><a id="desc">Bruno Feresin</a></td>
 														<td>23.155.364</td>
 														<td>3625459876</td>
 														<td>25</td>
-														<td>kickBoxing</td>
+														<td>KickBoxing</td>
 														<td>No</td>
 														<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
@@ -124,13 +157,62 @@
 											</table>
 								</div>
 								<br/>
-								<div class="align-left">
-									<a href="nuevocliente.html" class="button">Nuevo Cliente</a>
-								</div>
 							</section>
 							<br/>
 							<div class="align-center">
 								<a href="javascript:window.history.go(-1);" class="button">Volver</a>
+
+
+							</div>
+							<div id="myModal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+										<h3>Cliente</h3>
+										<div class="col-md-12" align="center">
+		        							<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
+				        				</div>
+										<div class="box" style="margin:60px">
+										<div class="row uniform">
+											<div class="6u align-left" style="margin:20px">
+												<ul class="alt" >
+													<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre" disabled="disabled" value="Bruno Feresin" /></li>
+													<li>DNI:      <code>33.258.259</code></li>
+													<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono" disabled="disabled" value="3624-652865"/></li>
+													<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo" disabled="disabled" value="Entrenamiento para Competencia" /></li>
+													<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac" disabled="disabled" value="25/02/2018" /></li>
+													<li>Disciplinas Inscriptas: <div class="tooltip"><code>Aerobox</code><span class="tooltiptext">Lunes, Miercoles <br/> y Viernes 18:00 hs</span></div><div class="tooltip"><code>Complemento</code><span class="tooltiptext">Lunes a Sabados <br/>todo el dia hs</span></div><div class="tooltip"><code>TaekWondo</code><span class="tooltiptext">Martes y Jueves <br/> 19:00 hs</span></div></li>
+													<li>Fecha de Ingreso:      <code>20/10/2013</code></li>
+													<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso" disabled="disabled" value="89" /></li>
+													<li>Altura(cm):                <input style="width:4em;display:inline-block" type="tel" name="alt" id="alt" disabled="disabled" value="175" /></li>
+												</ul>
+											</div>
+											<div class="4u align-left" style="margin:20px">
+												<ul class="alt" >
+													<li><u>Proximo Vencimiento:</u></li>
+													<li><div class="tooltip"><code>Miercoles 27 de Junio</code><span class="tooltiptext">Monto: $1.200 </span></div></li>
+													<li><u>Eventos Registrados:</u></li>
+													<li><div class="tooltip"><code>Jueves 28 de Junio</code><span class="tooltiptext">Encuentro de Zumba</span></div><div class="tooltip"><code>Viernes 5 de Julio</code><span class="tooltiptext">Encuentro de Aerobox</span></div></li>
+													<li><u>Proximo Control de Rutina:</u></li>
+													<li><div class="tooltip"><code>Jueves 11 de Julio</code><span class="tooltiptext">Entrenador: Roberto Bonelli</span></div></li>
+												</ul>
+											</div>
+
+										</div>
+										</div>
+										<div class="" id="botmodi">
+											<button type="button" id="modi" name="button">Modificar</button>
+										</div>
+										<div class="" id="botgua" style="display:none">
+											<button type="button" id="guardar" name="button">Guardar</button>
+											<button type="button" onclick="javascript:document.getElementById('myModal').style.display = "none";" name="button">Cancelar</button>
+										</div>
+
+								</div>
+							</div>
+
+
+
+							  </div>
 							</div>
 						</div>
 					</section>
@@ -156,5 +238,63 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
 
+			<script>
+				function desoculta() {
+    				var value = document.getElementById("filtro").style.display;
+    				if (value == "none") {
+        				document.getElementById("filtro").style.display = "block";
+    						} else {
+        				document.getElementById("filtro").style.display = "none";
+    					}
+					}
+			</script>
+
+			<script>
+				// Get the button that opens the modal
+				var guar = document.getElementById("guardar");
+
+				var modi = document.getElementById("modi");
+
+				// When the user clicks the button, open the modal
+				guar.onclick = function() {
+					document.getElementById("botgua").style.display = "none";
+				    document.getElementById("botmodi").style.display = "block";
+				}
+
+				modi.onclick = function() {
+					document.getElementById("botmodi").style.display = "none";
+					document.getElementById("botgua").style.display = "block";
+				}
+
+			</script>
+
+
+			<script>
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the button that opens the modal
+				var btn = document.getElementById("desc");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks the button, open the modal
+				btn.onclick = function() {
+				    modal.style.display = "block";
+				}
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+				    modal.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				    if (event.target == modal) {
+				        modal.style.display = "none";
+				    }
+				}
+			</script>
 	</body>
 </html>
