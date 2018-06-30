@@ -42,49 +42,74 @@
 						<h1 class="major">Asistencia Clientes</h1>
 						<p></p>
 						<section>
-							<h2></h2>
-							<h3></h3>
-							<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Días</th>
-														<th>Asistió</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>25/06/2018</td>
-														<td>Si</td>
-													</tr>
-													<tr>
-														<td>26/06/2018</td>
-														<td>No</td>
-													</tr>
-													<tr>
-														<td>27/06/2018</td>
-														<td>Si</td>
-													</tr>
-													<tr>
-														<td>28/06/2018</td>
-														<td>No</td>
-													</tr>
-
-											</tbody>
-											<tfoot>
-
-											</tfoot>
-										</table>
-								</div>
-							</section>
-							<br/>
-							<div class="align-center">
-								<a href="javascript:window.history.go(-1);" class="button">Volver</a>
+							<div class="" style="margin-left: 750px">
+								<a onclick="desoculta(this)" class="button">Historial de Asistencia</a>
 							</div>
-						</div>
+							<h4>Nombre:   <code>Tinelli, Marcelo Edvar</code></h4>
+							<h4>DNI:   <code>33.285.355</code></h4>
+							<h2></h2>
+							<div class="box 6u">
+									<h3 class="align-center"><i>Asistencia de Hoy</i></h3>
+									<h4>Dia:<code>
+										<script type="text/javascript">
+											var d = new Date();
+											document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+										</script>
+											</code></h4>
+									<h4>Disciplina:
+										<select  class="4u" onchange="habcarga(this.options[this.selectedIndex].value);" name="disciplinas" style="display:inline-block;height:30px" id="disciplinas" >
+														<option value="0">- Seleccione -</option>
+														<option value="1">Complemento</option>
+														<option value="1">Funcional</option>
+														<option value="1">Aerobox</option>
+													</select></h4>
+									<div class="align-center ">
+										<a id="carga" href="" class="button disabled">Cargar</a>
+									</div>
+							</div>
+							<h3></h3>
+							<div id="historial" class="" style="display:none">
+								<div class="table-wrapper">
+												<table>
+													<thead>
+														<tr>
+															<th>Días</th>
+															<th>Asistió</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>25/06/2018</td>
+															<td>Si</td>
+														</tr>
+														<tr>
+															<td>26/06/2018</td>
+															<td>No</td>
+														</tr>
+														<tr>
+															<td>27/06/2018</td>
+															<td>Si</td>
+														</tr>
+														<tr>
+															<td>28/06/2018</td>
+															<td>No</td>
+														</tr>
 
-					</section>
-				</div>
+												</tbody>
+												<tfoot>
+
+												</tfoot>
+											</table>
+									</div>
+							</div>
+							<br/>
+						</section>
+						<div class="align-center">
+							<a href="javascript:window.history.go(-1);" class="button">Volver</a>
+						</div>
+					</div>
+				</section>
+		</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
@@ -103,6 +128,26 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+			<script>
+				function desoculta() {
+    				var value = document.getElementById("historial").style.display;
+    				if (value == "none") {
+        				document.getElementById("historial").style.display = "block";
+    						} else {
+        				document.getElementById("historial").style.display = "none";
+    					}
+					}
+			</script>
+			<script>
+				function habcarga(Combo) {
+    				var value = Combo;
+    				if (value == 1) {
+        				document.getElementById("carga").style.classList.remove("disabled");
+    						} else {
+        				document.getElementById("carga").style.classList.add("disabled");
+    					}
+					}
+			</script>
 
 	</body>
 </html>
