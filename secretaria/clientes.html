@@ -41,7 +41,7 @@
 							<h1 class="major">Clientes</h1>
 							<p></p>
 							<div class="align-left">
-								<a href="nuevocliente.html" class="button">Nuevo Cliente</a>
+								<a onclick="modalnue(this);" class="button">Nuevo Cliente</a>
 								<span style="margin-left:40px"></span>
 								<a href="historial.pdf" class="button"><img src="images/pdf.png" width="18px"> Imprimir</a>
 							</div>
@@ -92,7 +92,7 @@
 												</thead>
 												<tbody>
 													<tr>
-														<td><a id="desc">Bruno Feresin</a></td>
+														<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
 														<td>23.155.364</td>
 														<td>3625459876</td>
 														<td>25</td>
@@ -102,7 +102,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Max Urbanija</a></td>
+														<td><a onclick="modaldat(this);">Max Urbanija</a></td>
 														<td>35.162.346</td>
 													 	<td>3794568712</td>
 													 	<td>26</td>
@@ -112,7 +112,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Santino Zaracho</a></td>
+														<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
 														<td>39.456.213</td>
 														<td>3794568942</td>
 														<td>22</td>
@@ -122,7 +122,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Bruno Feresin</a></td>
+														<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
 														<td>23.155.364</td>
 														<td>3625459876</td>
 														<td>25</td>
@@ -132,7 +132,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Max Urbanija</a></td>
+														<td><a onclick="modaldat(this);">Max Urbanija</a></td>
 														<td>35.162.346</td>
 													 	<td>3794568712</td>
 													 	<td>26</td>
@@ -142,7 +142,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Santino Zaracho</a></td>
+														<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
 														<td>39.456.213</td>
 														<td>3794568942</td>
 														<td>22</td>
@@ -152,7 +152,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Bruno Feresin</a></td>
+														<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
 														<td>23.155.364</td>
 														<td>3625459876</td>
 														<td>25</td>
@@ -162,7 +162,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Max Urbanija</a></td>
+														<td><a onclick="modaldat(this);">Max Urbanija</a></td>
 														<td>35.162.346</td>
 													 	<td>3794568712</td>
 													 	<td>26</td>
@@ -172,7 +172,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Santino Zaracho</a></td>
+														<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
 														<td>39.456.213</td>
 														<td>3794568942</td>
 														<td>22</td>
@@ -182,7 +182,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Bruno Feresin</a></td>
+														<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
 														<td>23.155.364</td>
 														<td>3625459876</td>
 														<td>25</td>
@@ -192,7 +192,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Max Urbanija</a></td>
+														<td><a onclick="modaldat(this);">Max Urbanija</a></td>
 														<td>35.162.346</td>
 													 	<td>3794568712</td>
 													 	<td>26</td>
@@ -202,7 +202,7 @@
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
 													</tr>
 													<tr>
-														<td><a id="desc">Santino Zaracho</a></td>
+														<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
 														<td>39.456.213</td>
 														<td>3794568942</td>
 														<td>22</td>
@@ -222,56 +222,109 @@
 							<div class="align-center">
 								<a href="javascript:window.history.go(-1);" class="button">Volver</a>
 							</div>
-							<div id="myModal" class="modal">
+
+				<!-- Seccion PopPups -->
+
+							<div id="modaldatos" class="modal">
 								<div class="modal-content">
 									<span class="close">&times;</span>
+									<div  id="exito" class="" style="display:none" >
+										<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">Se ha Modificado los datos correctamente.</h3>
+										<button type="button" onclick="guarda(this)" name="button">Cerrar</button>
+									</div>
+									<div  id="info" class="">
 										<h3>Cliente</h3>
 										<div class="col-md-12" align="center">
 		        							<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
 				        				</div>
 										<div class="box" style="margin:60px">
-										<div class="row uniform">
-											<div class="6u align-left" style="margin:20px">
-												<ul class="alt" >
-													<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre" disabled value="Bruno Feresin" /></li>
-													<li>DNI:      <code>33.258.259</code></li>
-													<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono" disabled value="3624-652865"/></li>
-													<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo" disabled value="Entrenamiento para Competencia" /></li>
-													<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac" disabled value="25/02/2018" /></li>
-													<li>Disciplinas Inscriptas: <div class="tooltip"><code>Aerobox</code><span class="tooltiptext">Lunes, Miercoles <br/> y Viernes 18:00 hs</span></div><div class="tooltip"><code>Complemento</code><span class="tooltiptext">Lunes a Sabados <br/>todo el dia hs</span></div><div class="tooltip"><code>TaekWondo</code><span class="tooltiptext">Martes y Jueves <br/> 19:00 hs</span></div></li>
-													<li>Fecha de Ingreso:      <code>20/10/2013</code></li>
-													<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso" disabled value="89" /></li>
-													<li>Altura(cm):                <input style="width:4em;display:inline-block" type="tel" name="alt" id="alt" disabled value="175" /></li>
-												</ul>
-											</div>
-											<div class="4u align-left" style="margin:20px">
-												<ul class="alt" >
-													<li><u>Proximo Vencimiento:</u></li>
-													<li><div class="tooltip"><code>Miercoles 27 de Junio</code><span class="tooltiptext">Monto: $1.200 </span></div></li>
-													<li><u>Eventos Registrados:</u></li>
-													<li><div class="tooltip"><code>Jueves 28 de Junio</code><span class="tooltiptext">Encuentro de Zumba</span></div><div class="tooltip"><code>Viernes 5 de Julio</code><span class="tooltiptext">Encuentro de Aerobox</span></div></li>
-													<li><u>Proximo Control de Rutina:</u></li>
-													<li><div class="tooltip"><code>Jueves 11 de Julio</code><span class="tooltiptext">Entrenador: Roberto Bonelli</span></div></li>
-												</ul>
-											</div>
+											<div class="row uniform">
+												<div class="6u align-left" style="margin:20px">
+													<ul class="alt" >
+														<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre" disabled value="Bruno Feresin" /></li>
+														<li>DNI:      <code>33.258.259</code></li>
+														<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono" disabled value="3624-652865"/></li>
+														<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo" disabled value="Entrenamiento para Competencia" /></li>
+														<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac" disabled value="25/02/2018" /></li>
+														<li>Disciplinas Inscriptas: <div class="tooltip"><code>Aerobox</code><span class="tooltiptext">Lunes, Miercoles <br/> y Viernes 18:00 hs</span></div><div class="tooltip"><code>Complemento</code><span class="tooltiptext">Lunes a Sabados <br/>todo el dia hs</span></div><div class="tooltip"><code>TaekWondo</code><span class="tooltiptext">Martes y Jueves <br/> 19:00 hs</span></div></li>
+														<li>Fecha de Ingreso:      <code>20/10/2013</code></li>
+														<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso" disabled value="89" /></li>
+														<li>Altura(cm):                <input style="width:4em;display:inline-block" type="tel" name="alt" id="alt" disabled value="175" /></li>
+													</ul>
+												</div>
+												<div class="4u align-left" style="margin:20px">
+													<ul class="alt" >
+														<li><u>Proximo Vencimiento:</u></li>
+														<li><div class="tooltip"><code>Miercoles 27 de Junio</code><span class="tooltiptext">Monto: $1.200 </span></div></li>
+														<li><u>Eventos Registrados:</u></li>
+														<li><div class="tooltip"><code>Jueves 28 de Junio</code><span class="tooltiptext">Encuentro de Zumba</span></div><div class="tooltip"><code>Viernes 5 de Julio</code><span class="tooltiptext">Encuentro de Aerobox</span></div></li>
+														<li><u>Proximo Control de Rutina:</u></li>
+														<li><div class="tooltip"><code>Jueves 11 de Julio</code><span class="tooltiptext">Entrenador: Roberto Bonelli</span></div></li>
+													</ul>
+												</div>
 
-										</div>
+											</div>
 										</div>
 										<div class="" id="botmodi">
 											<button type="button" id="modi" name="button">Modificar</button>
 										</div>
 										<div class="" id="botgua" style="display:none">
 											<button type="button" id="guardar" name="button">Guardar</button>
-											<button type="button" onclick="javascript:document.getElementById('myModal').style.display = 'none';" name="button">Cancelar</button>
+											<button type="button" onclick="javascript:document.getElementById('modaldatos').style.display = 'none';" name="button">Cancelar</button>
 										</div>
+									</div>
 
 								</div>
 							</div>
 
+							<div id="modalnuevo" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div  id="exitonue" class="" style="display:none" >
+										<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">Se ha Modificado los datos correctamente.</h3>
+										<button type="button" onclick="registrar(this)" name="button">Cerrar</button>
+									</div>
+									<div id="infonue" class="">
+										<h3>Cliente</h3>
+										<div class="col-md-12" align="center">
+											<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
+										</div>
+										<form class="" action="" method="post">
+											<div class="box" style="margin:60px">
+												<div class="row uniform">
+													<div class="6u align-left" style="margin:20px">
 
+															<ul class="alt" >
+																<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre"  value="" /></li>
+																<li>DNI:      <input style="width:12em;display:inline-block" type="text" name="nombre" id="dni"  value="" /></li>
+																<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono"  value=""/></li>
+																<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo"  value="" /></li>
+																<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac"  value="" /></li>
+																<li>Disciplinas Inscriptas: <i>No registra disciplinas por el momento.</i></li>
+																<li>Fecha de Ingreso:      <code>
+																	<script type="text/javascript">
+																		var d = new Date();
+																		document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+																	</script>
+																		</code></li>
+																<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso"  value="" /></li>
+																<li>Altura(cm):                <input style="width:4em;display:inline-block" type="tel" name="alt" id="alt"  value="" /></li>
+															</ul>
 
-							  </div>
+													</div>
+													<div class="4u align-left" style="margin:20px">
+
+													</div>
+
+												</div>
+											</div>
+										</form>
+										<a id="registra" class="button submit">Registrar</a>
+										<button type="button" onclick="javascript:document.getElementById('modalnuevo').style.display = 'none';" name="button">Cancelar</button>
+									</div>
+								</div>
 							</div>
+
 						</div>
 					</section>
 			</div>
@@ -307,13 +360,34 @@
 					}
 			</script>
 
+			<script type="text/javascript">
+				function guarda(){
+					document.getElementById('modaldatos').style.display = 'none';
+					modal.style.display = "none";
+					document.getElementById("info").style.display = "block";
+					document.getElementById("exito").style.display = "none";
+				}
+				function registrar(){
+					document.getElementById('modalnuevo').style.display = 'none';
+					modaldat.style.display = "none"
+					document.getElementById("infonue").style.display = "block";
+					document.getElementById("exitonue").style.display = "none";
+				}
+
+
+			</script>
+
 			<script>
 				// Get the button that opens the modal
+				var regis = document.getElementById("registra");
 				var guar = document.getElementById("guardar");
-
 				var modi = document.getElementById("modi");
 
-				// When the user clicks the button, open the modal
+				regis.onclick = function(){
+					document.getElementById("infonue").style.display = "none";
+				    document.getElementById("exitonue").style.display = "block";
+				}
+
 				guar.onclick = function() {
 					document.getElementById("botgua").style.display = "none";
 				    document.getElementById("botmodi").style.display = "block";
@@ -323,9 +397,9 @@
 					document.getElementById("peso").disabled = true;
 					document.getElementById("objetivo").disabled = true;
 					document.getElementById("alt").disabled = true;
+					document.getElementById("info").style.display = "none";
+				    document.getElementById("exito").style.display = "block";
 				}
-
-
 
 				modi.onclick = function() {
 					document.getElementById("botmodi").style.display = "none";
@@ -337,37 +411,56 @@
 					document.getElementById("objetivo").disabled = false;
 					document.getElementById("alt").disabled = false;
 				}
-
-
 			</script>
-
-
+			<script>
+				function modaldat() {
+					document.getElementById('modaldatos').style.display = "block";
+				}
+				function modalnue(){
+					document.getElementById('modalnuevo').style.display = "block";
+				}
+			</script>
 			<script>
 				// Get the modal
-				var modal = document.getElementById('myModal');
-
-				// Get the button that opens the modal
-				var btn = document.getElementById("desc");
+				var modaldatos = document.getElementById('modaldatos');
+				var modal = document.getElementById('modalnuevo');
+				var infodat = document.getElementById("info");
+				var infonue = document.getElementById("infonue");
 
 				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
-
-				// When the user clicks the button, open the modal
-				btn.onclick = function() {
-				    modal.style.display = "block";
-				}
+				var spandat = document.getElementsByClassName("close")[0];
+				var span = document.getElementsByClassName("close")[1];
 
 				// When the user clicks on <span> (x), close the modal
+				spandat.onclick = function() {
+					modaldatos.style.display = "none";
+					modal.style.display = "none";
+				}
 				span.onclick = function() {
-				    modal.style.display = "none";
+					modaldatos.style.display = "none";
+					modal.style.display = "none";
 				}
 
 				// When the user clicks anywhere outside of the modal, close it
 				window.onclick = function(event) {
-				    if (event.target == modal) {
-				        modal.style.display = "none";
-				    }
+					if (event.target == modaldatos) {
+						if (infodat.style.display == "none") {
+							guarda()}
+						modaldatos.style.display = "none";
+						modal.style.display = "none";
+
+					}else {
+						if (event.target == modal) {
+							if (infonue.style.display == "none") {
+								registrar()
+							modaldatos.style.display = "none";
+							modal.style.display = "none";
+							}
+						}
+					}
 				}
+
 			</script>
+
 	</body>
 </html>
