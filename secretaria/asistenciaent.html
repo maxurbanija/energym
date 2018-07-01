@@ -62,12 +62,18 @@
 											<h4>Disciplina:
 												<select  class="4u" onchange="habcarga(this.options[this.selectedIndex].value)" name="disciplinas" style="display:inline-block;height:30px" id="disciplinas" >
 																<option value="0">- Seleccione -</option>
+
+																<option value="0" onchange="desocultatur(this.options[this.selectedIndex].value)">No asiste</option>
 																<option value="1">Complemento</option>
 																<option value="1">Funcional</option>
 																<option value="1">Aerobox</option>
 															</select></h4>
-										</div>
 
+											<H4>Justificada
+												<input type="radio" enabled="enabled" id="a29" name="a29">
+												<label for="a29"></label>
+											</H4>
+										</div>
 										<div class="align-center">
 											<button id="cargar" class="button ">Cargar</button>
 										</div>
