@@ -112,7 +112,7 @@
 														<td>23.155.364</td>
 														<td>3625459876</td>
 														<td>25</td>
-														<td>kickBoxing</td>
+
 														<td>No</td>
 														<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
@@ -122,7 +122,7 @@
 														<td>35.162.346</td>
 													 	<td>3794568712</td>
 													 	<td>26</td>
-													 	<td>Zumba</td>
+
 													 	<td>No</td>
 														<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
@@ -132,7 +132,7 @@
 														<td>39.456.213</td>
 														<td>3794568942</td>
 														<td>22</td>
-														<td>Aerobox</td>
+
 														<td>Si</td>
 														<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
@@ -142,7 +142,7 @@
 														<td>23.155.364</td>
 														<td>3625459876</td>
 														<td>25</td>
-														<td>KickBoxing</td>
+
 														<td>No</td>
 														<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
@@ -152,7 +152,7 @@
 														<td>35.162.346</td>
 													 	<td>3794568712</td>
 													 	<td>26</td>
-													 	<td>Zumba</td>
+
 													 	<td>No</td>
 														<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
@@ -162,7 +162,7 @@
 														<td>39.456.213</td>
 														<td>3794568942</td>
 														<td>22</td>
-														<td>Aerobox</td>
+
 														<td>Si</td>
 														<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
 														<td><a href="cobrocliente.html" class="button small">Cobrar</a></td>
@@ -228,8 +228,12 @@
 														<li>DNI:      <code>33.258.259</code></li>
 														<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono" disabled value="3624-652865"/></li>
 														<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo" disabled value="Entrenamiento para Competencia" /></li>
-														<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac" disabled value="25/02/2018" /></li>
-														<li>Disciplinas Inscriptas: <div class="tooltip"><code>Aerobox</code><span class="tooltiptext">Lunes, Miercoles <br/> y Viernes 18:00 hs</span></div><div class="tooltip"><code>Complemento</code><span class="tooltiptext">Lunes a Sabados <br/>todo el dia hs</span></div><div class="tooltip"><code>TaekWondo</code><span class="tooltiptext">Martes y Jueves <br/> 19:00 hs</span></div></li>
+														<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac" disabled value="1995-05-15" /></li>
+														<li>Disciplinas Inscriptas:
+															<div class="tooltip"><code>Aerobox</code><span class="tooltiptext">Lunes, Miercoles <br/> y Viernes 18:00 hs</span></div>
+															<div class="tooltip"><code>Complemento</code><span class="tooltiptext">Lunes a Sabados <br/>todo el dia hs</span></div>
+															<div class="tooltip"><code>TaekWondo</code><span class="tooltiptext">Martes y Jueves <br/> 19:00 hs</span></div>
+														</li>
 														<li>Fecha de Ingreso:      <code>20/10/2013</code></li>
 														<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso" disabled value="89" /></li>
 														<li>Altura(cm):                <input style="width:4em;display:inline-block" type="tel" name="alt" id="alt" disabled value="175" /></li>
@@ -241,8 +245,12 @@
 														<li><div class="tooltip"><code>Miercoles 27 de Junio</code><span class="tooltiptext">Monto: $1.200 </span></div></li>
 														<li><u>Eventos Registrados:</u></li>
 														<li><div class="tooltip"><code>Jueves 28 de Junio</code><span class="tooltiptext">Encuentro de Zumba</span></div><div class="tooltip"><code>Viernes 5 de Julio</code><span class="tooltiptext">Encuentro de Aerobox</span></div></li>
+														<li><div id="evemodi" style="display:none" class="align-center"><code>+</code><i>Modificar Eventos</i></div></li>
 														<li><u>Proximo Control de Rutina:</u></li>
 														<li><div class="tooltip"><code>Jueves 11 de Julio</code><span class="tooltiptext">Entrenador: Roberto Bonelli</span></div></li>
+														<li><div id="conmodi" style="display:none" class="align-center"><code>+</code><i>Modificar Controles</i></div></li>
+														<li><u>Disciplinas</u></li>
+														<li><div id="dismodi" style="display:none" class="align-center"><code>+</code><i>Modificar Disciplinas</i></div></li>
 													</ul>
 												</div>
 
@@ -253,7 +261,7 @@
 										</div>
 										<div class="" id="botgua" style="display:none">
 											<button type="button" id="guardar" name="button">Guardar</button>
-											<button type="button" onclick="javascript:document.getElementById('modaldatos').style.display = 'none';" name="button">Cancelar</button>
+											<button type="button" onclick="javascript:document.getElementById('modaldatos').style.display = 'none';guar.click()" name="button">Cancelar</button>
 										</div>
 									</div>
 
@@ -296,7 +304,8 @@
 
 													</div>
 													<div class="4u align-left" style="margin:20px">
-
+														<li><i>Vencimientos, Eventos, Control de Rutinas y Disciplinas:</i></li>
+														<li><i>Informacion no disponible.</i></li>
 													</div>
 
 												</div>
@@ -342,7 +351,6 @@
     					}
 					}
 			</script>
-
 			<script type="text/javascript">
 				function guarda(){
 					document.getElementById('modaldatos').style.display = 'none';
@@ -359,7 +367,6 @@
 
 
 			</script>
-
 			<script>
 				// Get the button that opens the modal
 				var regis = document.getElementById("registra");
@@ -380,6 +387,9 @@
 					document.getElementById("peso").disabled = true;
 					document.getElementById("objetivo").disabled = true;
 					document.getElementById("alt").disabled = true;
+					document.getElementById("dismodi").style.display = "none";
+					document.getElementById("evemodi").style.display = "none";
+					document.getElementById("conmodi").style.display = "none";
 					document.getElementById("info").style.display = "none";
 				    document.getElementById("exito").style.display = "block";
 				}
@@ -393,6 +403,11 @@
 					document.getElementById("peso").disabled = false;
 					document.getElementById("objetivo").disabled = false;
 					document.getElementById("alt").disabled = false;
+					document.getElementById("dismodi").style.display = "block";
+					document.getElementById("conmodi").style.display = "block";
+					document.getElementById("evemodi").style.display = "block";
+
+
 				}
 			</script>
 			<script>
