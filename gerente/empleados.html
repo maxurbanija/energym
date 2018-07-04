@@ -35,110 +35,427 @@
 			</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
+				<section id="empleados" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Empleados</h1>
+						<p></p>
+						<div class="align-left">
+							<a onclick="modalnue(this);" class="button">Nuevo Empleado</a>
+							<span style="margin-left:40px"></span>
+							<a href="historial.pdf" class="button"><img src="images/pdf.png" width="18px"> Imprimir</a>
+						</div>
+						<br/>
+						<div class="align-left" style="margin-bottom:10px">
+							<a onclick="desoculta(this)" class="button">Filtar</a>
+						</div>
+						<div id="filtro" class="" style="display:none;margin-left:20px">
+							<div>
+								<h4>Por:
+								<input style="width:12em;height: 1.8em;display:inline-block" type="text" name="Fini" placeholder="Nombre">
+								<input style="width:10em;display:inline-block" type="tel" name="Ffin" placeholder="DNI">
 
-				<!-- Empleados -->
-					<section id="empleados" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Empleados</h1>
-							<p></p>
-					<!-- Table -->
-								<section>
-									<h2></h2>
-									<h3></h3>
-									<div class="table-wrapper">
-										<table>
+								<select  class="2u" name="cargo" style="display:inline-block;height:1.8em" id="cargo" >
+									<option value="0">- Todos -</option>
+									<option value="1">Secretarios</option>
+									<option value="1">Entrenadores</option>
+								</select>
+								</h4>
+							</div>
+						</div>
+						<section>
+							<h2></h2>
+							<h3></h3>
+							<div class="table-wrapper">
+								<table>
 											<thead>
 												<tr>
-													<th>Apellido y Nombre</th>
+													<th>Nombre y Apellido</th>
 													<th>DNI</th>
 													<th>Direccion</th>
 													<th>Telefono</th>
 													<th>Cargo</th>
-													<th> </th>
+													<th></th>
 												</tr>
 											</thead>
 											<tbody>
+												<tr>
+													<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
+													<td>23.155.364</td>
+													<td>3625459876</td>
+													<td>25</td>
+													<td>Entrenador</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
 
-													<td>Zaracho Santino</td>
-													<td>45.355.123</td>
-													<td>Calle Falsa 123 Nº 3521</td>
-													<th>3624-861347</th>
-													<td>Entrenador</td>
-													<td><a href="#" class="button small">Editar</a></td>
 												</tr>
 												<tr>
-													<td>Toledo Lucas</td>
-													<td>11.545.153</td>
-													<td>Calle esquina 14 Nº 767</td>
-													<th>3624-861347</th>
+													<td><a onclick="modaldat(this);">Max Urbanija</a></td>
+													<td>35.162.346</td>
+													<td>3794568712</td>
+													<td>26</td>
 													<td>Entrenador</td>
-													<td><a href="#" class="button small">Editar</a></td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
 												</tr>
 												<tr>
-													<td>Feresin Bruno</td>
-													<td>27.362.524</td>
-													<td>Calle a la vuelta Nº 967</td>
-													<th>3624-861347</th>
-													<td>Entrenador</td>
-													<td><a href="#" class="button small">Editar</a></td>
-												</tr>
-												<tr>
-													<td>Urbanija Max</td>
-													<td>9.564.859</td>
-													<td>Calle la calecita Nº 1687</td>
-													<th>3624-861347</th>
+													<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
+													<td>39.456.213</td>
+													<td>3794568942</td>
+													<td>22</td>
 													<td>Secretario</td>
-													<td><a href="#" class="button small">Editar</a></td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
 												</tr>
 												<tr>
-													<td>Branchi Debra</td>
-													<td>39.564.859</td>
-													<td>Calle la vueltita Nº 1687</td>
-													<th>3624-861347</th>
-													<td>Entrenadora</td>
-													<td><a href="#" class="button small">Editar</a></td>
+													<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
+													<td>23.155.364</td>
+													<td>3625459876</td>
+													<td>25</td>
+
+													<td>Entrenador</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
+												</tr>
+												<tr>
+													<td><a onclick="modaldat(this);">Max Urbanija</a></td>
+													<td>35.162.346</td>
+													<td>3794568712</td>
+													<td>26</td>
+
+													<td>Entrenador</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
+												</tr>
+												<tr>
+													<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
+													<td>39.456.213</td>
+													<td>3794568942</td>
+													<td>22</td>
+
+													<td>Secretario</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
+												</tr>
+												<tr>
+													<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
+													<td>23.155.364</td>
+													<td>3625459876</td>
+													<td>25</td>
+
+													<td>Entrenador</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
+												</tr>
+												<tr>
+													<td><a onclick="modaldat(this);">Max Urbanija</a></td>
+													<td>35.162.346</td>
+													<td>3794568712</td>
+													<td>26</td>
+
+													<td>Entrenador</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
+												</tr>
+												<tr>
+													<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
+													<td>39.456.213</td>
+													<td>3794568942</td>
+													<td>22</td>
+
+													<td>Secretario</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
+												</tr>
+												<tr>
+													<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
+													<td>23.155.364</td>
+													<td>3625459876</td>
+													<td>25</td>
+													<td>Entrenador</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
+												</tr>
+												<tr>
+													<td><a onclick="modaldat(this);">Max Urbanija</a></td>
+													<td>35.162.346</td>
+													<td>3794568712</td>
+													<td>26</td>
+													<td>Entrenador</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
+												</tr>
+												<tr>
+													<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
+													<td>39.456.213</td>
+													<td>3794568942</td>
+													<td>22</td>
+													<td>Secretario</td>
+													<td><a href="asistenciaclien.html" class="button small">Asistencia</a></td>
+
 												</tr>
 											</tbody>
 											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td></td>
-												</tr>
 											</tfoot>
 										</table>
-									</div>
-									<div class="align-left">
-										<a href="nuevoEmpleado.html" class="button ">Agregar empleado</a>
-									</div>
-									<br />
-
-								</section>
-								<div class="align-center">
-									<a href="javascript:window.history.go(-1);" class="button">Volver</a>
-								</div>
+							</div>
+							<br/>
+						</section>
+						<br/>
+						<div class="align-center">
+							<a href="javascript:window.history.go(-1);" class="button">Volver</a>
 						</div>
-					</section>
+
+			<!-- Seccion PopPups -->
+
+						<div id="modaldatos" class="modal">
+							<div class="modal-content">
+								<span class="close">&times;</span>
+								<div  id="exito" class="" style="display:none" >
+									<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">Se ha Modificado los datos correctamente.</h3>
+									<button type="button" onclick="guarda(this)" name="button">Cerrar</button>
+								</div>
+								<div  id="info" class="">
+									<h3>Cliente</h3>
+									<div class="col-md-12" align="center">
+										<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
+									</div>
+									<div class="box" style="margin:60px">
+										<div class="row uniform">
+											<div class="6u align-left" style="margin:20px">
+												<ul class="alt" >
+													<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre" disabled value="Bruno Feresin" /></li>
+													<li>DNI:      <code>33.258.259</code></li>
+													<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono" disabled value="3624-652865"/></li>
+													<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac" disabled value="1995-05-15" /></li>
+													<li>Entrenador de:
+														<div class="tooltip"><code>Aerobox</code><span class="tooltiptext">Lunes, Miercoles <br/> y Viernes 18:00 hs</span></div>
+														<div class="tooltip"><code>Complemento</code><span class="tooltiptext">Lunes a Sabados <br/>todo el dia hs</span></div>
+														<div class="tooltip"><code>TaekWondo</code><span class="tooltiptext">Martes y Jueves <br/> 19:00 hs</span></div>
+													</li>
+													<li>Fecha de Ingreso:      <code>20/10/2013</code></li>
+												</ul>
+											</div>
+											<div class="4u align-left" style="margin:20px">
+												<ul class="alt" >
+													<li><u>Porcentaje de Asistencia Mensual:</u></li>
+													<li><div class="tooltip"><code>70%</code><span class="tooltiptext">Total de Clases: 200 </br>Clases Asistidas: 140 </span></div></li>
+													<li><u>Porcentaje de Clientes:</u></li>
+													<li><div class="tooltip"><code>22%</code><span class="tooltiptext">Total de Clientes:400 </br>Clientes que entrena:88 </span></div></li>
+
+													<li><u>Staff en los Eventos:</u></li>
+													<li><div class="tooltip"><code>Jueves 28 de Junio</code><span class="tooltiptext">Encuentro de Zumba</span></div><div class="tooltip"><code>Viernes 5 de Julio</code><span class="tooltiptext">Encuentro de Aerobox</span></div></li>
+
+
+													<li><u>Disciplinas</u></li>
+													<li><div id="dismodi" style="display:none" class="align-center"><code>+</code><i>Modificar Disciplinas</i></div></li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+									<div class="" id="botmodi">
+										<button type="button" id="modi" name="button">Modificar</button>
+									</div>
+									<div class="" id="botgua" style="display:none">
+										<button type="button" id="guardar" name="button">Guardar</button>
+										<button type="button" onclick="javascript:document.getElementById('modaldatos').style.display = 'none';guar.click()" name="button">Cancelar</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div id="modalnuevo" class="modal">
+							<div class="modal-content">
+								<span class="close">&times;</span>
+								<div  id="exitonue" class="" style="display:none" >
+									<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">Se ha Modificado los datos correctamente.</h3>
+									<button type="button" onclick="registrar(this)" name="button">Cerrar</button>
+								</div>
+								<div id="infonue" class="">
+									<h3>Cliente</h3>
+									<div class="col-md-12" align="center">
+										<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
+									</div>
+									<form class="" action="" method="post">
+										<div class="box" style="margin:60px">
+											<div class="row uniform">
+												<div class="6u align-left" style="margin:20px">
+
+														<ul class="alt" >
+															<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre"  value="" /></li>
+															<li>DNI:      <input style="width:12em;display:inline-block" type="text" name="nombre" id="dni"  value="" /></li>
+															<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono"  value=""/></li>
+															<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo"  value="" /></li>
+															<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac"  value="" /></li>
+															<li>Disciplinas Inscriptas: <i>No registra disciplinas por el momento.</i></li>
+															<li>Fecha de Ingreso:      <code>
+																<script type="text/javascript">
+																	var d = new Date();
+																	document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+																</script>
+																	</code></li>
+															<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso"  value="" /></li>
+															<li>Altura(cm):                <input style="width:4em;display:inline-block" type="tel" name="alt" id="alt"  value="" /></li>
+														</ul>
+
+												</div>
+												<div class="4u align-left" style="margin:20px">
+													<li><i>Vencimientos, Eventos, Control de Rutinas y Disciplinas:</i></li>
+													<li><i>Informacion no disponible.</i></li>
+												</div>
+
+											</div>
+										</div>
+									</form>
+									<a id="registra" class="button submit">Registrar</a>
+									<button type="button" onclick="javascript:document.getElementById('modalnuevo').style.display = 'none';" name="button">Cancelar</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+		</div>
+
+
+
+	<!-- Footer -->
+		<footer id="footer" class="wrapper alt ">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">G6 Mates</a></li>
+				</ul>
 			</div>
+		</footer>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://energym.66ghz.com">G6 Mates</a></li>
-					</ul>
-				</div>
-			</footer>
+	<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
 
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/skel.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="../assets/js/main.js"></script>
+		<script>
+			function desoculta() {
+				var value = document.getElementById("filtro").style.display;
+				if (value == "none") {
+					document.getElementById("filtro").style.display = "block";
+						} else {
+					document.getElementById("filtro").style.display = "none";
+					}
+				}
+		</script>
+		<script type="text/javascript">
+			function guarda(){
+				document.getElementById('modaldatos').style.display = 'none';
+				modal.style.display = "none";
+				document.getElementById("info").style.display = "block";
+				document.getElementById("exito").style.display = "none";
+			}
+			function registrar(){
+				document.getElementById('modalnuevo').style.display = 'none';
+				modaldat.style.display = "none"
+				document.getElementById("infonue").style.display = "block";
+				document.getElementById("exitonue").style.display = "none";
+			}
 
 
-	</body>
+		</script>
+		<script>
+			// Get the button that opens the modal
+			var regis = document.getElementById("registra");
+			var guar = document.getElementById("guardar");
+			var modi = document.getElementById("modi");
+
+			regis.onclick = function(){
+				document.getElementById("infonue").style.display = "none";
+				document.getElementById("exitonue").style.display = "block";
+			}
+
+			guar.onclick = function() {
+				document.getElementById("botgua").style.display = "none";
+				document.getElementById("botmodi").style.display = "block";
+				document.getElementById("nombre").disabled = true;
+				document.getElementById("telefono").disabled = true;
+				document.getElementById("fecnac").disabled = true;
+				document.getElementById("peso").disabled = true;
+				document.getElementById("objetivo").disabled = true;
+				document.getElementById("alt").disabled = true;
+				document.getElementById("dismodi").style.display = "none";
+				document.getElementById("evemodi").style.display = "none";
+				document.getElementById("conmodi").style.display = "none";
+				document.getElementById("info").style.display = "none";
+				document.getElementById("exito").style.display = "block";
+			}
+
+			modi.onclick = function() {
+				document.getElementById("botmodi").style.display = "none";
+				document.getElementById("botgua").style.display = "block";
+				document.getElementById("nombre").disabled = false;
+				document.getElementById("telefono").disabled = false;
+				document.getElementById("fecnac").disabled = false;
+				document.getElementById("peso").disabled = false;
+				document.getElementById("objetivo").disabled = false;
+				document.getElementById("alt").disabled = false;
+				document.getElementById("dismodi").style.display = "block";
+				document.getElementById("conmodi").style.display = "block";
+				document.getElementById("evemodi").style.display = "block";
+
+
+			}
+		</script>
+		<script>
+			function modaldat() {
+				document.getElementById('modaldatos').style.display = "block";
+			}
+			function modalnue(){
+				document.getElementById('modalnuevo').style.display = "block";
+			}
+		</script>
+		<script>
+			// Get the modal
+			var modaldatos = document.getElementById('modaldatos');
+			var modal = document.getElementById('modalnuevo');
+			var infodat = document.getElementById("info");
+			var infonue = document.getElementById("infonue");
+
+			// Get the <span> element that closes the modal
+			var spandat = document.getElementsByClassName("close")[0];
+			var span = document.getElementsByClassName("close")[1];
+
+			// When the user clicks on <span> (x), close the modal
+			spandat.onclick = function() {
+				modaldatos.style.display = "none";
+				modal.style.display = "none";
+			}
+			span.onclick = function() {
+				modaldatos.style.display = "none";
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modaldatos) {
+					if (infodat.style.display == "none") {
+						guarda()}
+					modaldatos.style.display = "none";
+					modal.style.display = "none";
+
+				}else {
+					if (event.target == modal) {
+						if (infonue.style.display == "none") {
+							registrar()
+						modaldatos.style.display = "none";
+						modal.style.display = "none";
+						}
+					}
+				}
+			}
+
+		</script>
+
+</body>
 </html>
