@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>PG: Nuevo Evento</title>
+		<title>PG: Nueva Disciplina</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -22,7 +22,7 @@
 					<br/><br/><br/>
 					<nav>
 						<ul>
-							<li><a >Inicio</a></li>
+							<li><a>Inicio</a></li>
 							<li><a>Empleados</a></li>
 							<li><a>Clientes</a></li>
 							<li><a>Empleados</a></li>
@@ -34,36 +34,33 @@
 			</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
+				<section id="nuevoEvento" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Nuevo Evento</h1>
+						<p></p>
+						<section>
+							<h2></h2>
+							<h3></h3>
+							<h3>Ingrese los siguientes datos:</h2>
 
-				<!-- Crear Nuevo Cliente -->
-					<section id= "nuevoEvento">
-						<div class="inner">
-							<h1 class="major align-center">Cargar Nueva Disciplina</h1>
-
-							<section>
-								<h2>Ingrese los siguientes datos:</h2>
-									<form method="post align-center" action="clientes.html">
-										<div class="row uniform align-center">
-											<div class="6u 12u$(xsmall) align-center">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre Evento" />
-												<br/>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Fecha (dd/mm/aaaa)" />
-												<br/>
-
-											<ul class="actions">
-													<li><a href="eventos.html" class="button">Volver</a></li>
-													<li><a href="eventos.html" class="button icon fa-save">Guardar</a></li>
-
-											</ul>
-
-											</div>
-										</div>
+									<form method="post" class="6u" action="clientes.html">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre Evento" />
+										<br/>
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Fecha (dd/mm/aaaa)" />
+										<br/>
 									</form>
-							</section>
-						</div>
-					</section>
-			</div>
+									<div class="align-left">
+										<a href="disciplinas.html" class="button icon fa-save">Guardar</a>
+									</div>
+								</section>
+								<br/>
+								<div class="align-center">
+									<a href="javascript:window.history.go(-1);" class="button">Volver</a>
+								</div>
+							</div>
+						</section>
+				</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
@@ -75,13 +72,13 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>

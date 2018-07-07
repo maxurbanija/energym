@@ -35,15 +35,22 @@
 							<div class="inner">
 								<h1 class="major">Cobro de Cuota</h1>
 								<section>
+
+									<div class="" style="margin-center: 750px">
+										<a href="historialdepagos.html" class="button">Ver Historial de Pagos</a>
+									</div>
 									<div align="center">
+
+										<h4>Nombre:   <code>Tinelli, Marcelo Edvar</code></h4>
 										<h4>DNI:   <code>33.285.355</code></h4>
-										<select  class="4u"name="cuotas" id="cuota" onchange="desoculta(this.options[this.selectedIndex].value)">
+										<select  class="4u" name="cuotas" id="cuota" onchange="desoculta(this.options[this.selectedIndex].value)">
 											<option value="0">- Seleccionar Cuota -</option>
 											<option value="1">Mayo</option>
 											<option value="1">Junio</option>
 											<option value="1">Julio</option>
 										</select>
 			        				</div>
+
 									<div id="detalle" class="inner" style="visibility:hidden">
 										<div class="box" style="margin:60px; margin-bottom:15px" >
 											<div class="row uniform">
@@ -85,7 +92,7 @@
 											</div>
 										</div>
 										<div class="align-left" style="margin-left: 80px">
-											<a href="ticket.pdf" target="_blank" class="button icon fa-save">Cobrar</a>
+											<button id="cobroexito"  class="button icon fa-save">Cobrar</button>
 
 										</div>
 									</div>
@@ -93,6 +100,17 @@
 											<a href="javascript:window.history.go(-1);" class="button submit">Volver</a>
 									</div>
 								</section>
+								<div id="myModal" class="modal">
+									<div class="modal-content">
+										<span class="close">&times;</span>
+										<h3><img src="images/exito.png" alt="PagoRegistrado" width="60px" style="margin-right:20px">El pago	se ha Registrado correctamente.</h3>
+										<br/>
+										<h4><a href="ticket.pdf" download>Click Aqui</a>, si el Ticket no fue impreso, o desea re-imprimirlo.</h4>
+										<br/>
+									</div>
+								</div>
+
+								</div>
 							</div>
 						</section>
 				</div>
@@ -105,6 +123,9 @@
 					</ul>
 				</div>
 			</footer>
+
+
+
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
@@ -124,6 +145,48 @@
     					}
 					}
 			</script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the button that opens the modal
+				var btn = document.getElementById("cobroexito");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks the button, open the modal
+				btn.onclick = function() {
+				    modal.style.display = "block";
+					downloadURI('ticket.pdf','Ticket')
+				}
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+				    modal.style.display = "none";
+					window.history.go(-1);
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				    if (event.target == modal) {
+				        modal.style.display = "none";
+						window.history.go(-1);
+				    }
+				}
+			</script>
+			<script type="text/javascript">
+			function downloadURI(uri, name)
+				{
+				var link = document.createElement("a");
+				link.download = name;
+				link.href = uri;
+				link.click();
+				}
+			</script>
+
+
+
 
 	</body>
 </html>

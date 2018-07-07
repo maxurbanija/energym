@@ -2335,6 +2335,7 @@
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
+	input[type="date"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2357,6 +2358,7 @@
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		input[type="tel"]:invalid,
+		input[type="date"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2366,6 +2368,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		input[type="tel"]:focus,
+		input[type="date"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #ffffff;
@@ -2414,7 +2417,7 @@
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: 2.75em;
+		height: default;
 	}
 
 	textarea {
@@ -3968,6 +3971,53 @@ table .color-celda {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #261c3e;
+    margin: 15% auto; /* 15% from the top and centered */
+	margin-left: auto;
+	margin-right: auto;
+    padding: 20px;
+    border: solid 3px rgba(255, 255, 255, 0.25);
+    width: 95%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .pie {

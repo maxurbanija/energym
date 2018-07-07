@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PS: Historial de Pagos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Sidebar -->
+			<section id="sidebar">
+
+				<div class="inner">
+					<img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40">
+					<br/><br/><br/>
+					<nav>
+						<ul>
+							<li><a href="home.html">Inicio</a></li>
+							<li><a href="#clientes">Clientes</a></li>
+							<li><a href="entrenadores.html">Entrenadores</a></li>
+							<li><a href="disciplinas.html">Disciplinas</a></li>
+							<li><a href="eventos.html">Eventos</a></li>
+							<li><a href="../index.html">Cerrar Sesion</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="clientes" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Historial: Tinelli, Marcelo Edvar</h1>
+							<p></p>
+							<div class="align-left" style="margin-bottom:40px">
+								<a onclick="desoculta(this)" class="button">Filtar</a>
+							</div>
+							<div id="filtro" class="" style="display:none">
+								<div>
+									<label style="display:inline-block"for="Fini">Desde:</label>
+									<input style="width:12em;display:inline-block" type="date" name="Fini" title="Desde:">
+									<label style="display:inline-block"for="Ffin">Hasta:</label>
+									<input style="width:12em;display:inline-block" type="date" name="Ffin" title="Hasta:">
+									<label style="display:inline-block"for="fecha">Fecha de: </label>
+									<input style="display:inline-block" type="radio"id="pago" name="fecha" checked>
+									<label style="display:inline-block"for="pago">Pago</label>
+									<input style="display:inline-block" type="radio"id="venc" name="fecha" >
+									<label style="display:inline-block"for="venc">Vencimiento</label>
+								</div>
+								<br/>
+								<div>
+									<label style="display:inline-block"for="">Monto:</label>
+									<input style="width:6em;display:inline-block" type="tel" name="monmin" placeholder="Min">
+									<h4 style="display:inline-block">:</h4>
+									<input style="width:6em;display:inline-block" type="tel" name="monmax" placeholder="Max">
+								</div>
+							</div>
+							<br/>
+							<div class="align-left">
+								<a href="historial.pdf" class="button"><img src="images/pdf.png" width="18px"> Imprimir</a>
+							</div>
+							<section>
+								<h2></h2>
+								<h3></h3>
+
+								<div class="table-wrapper">
+									<table>
+												<thead>
+													<tr>
+														<th>Año</th>
+														<th>Cuota</th>
+														<th>Fecha de Pago</th>
+														<th>Fecha de Venc</th>
+														<th>Monto</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>2018</td>
+														<td>Abril-04</td>
+														<td>25/04/2018</td>
+														<td>26/04/2018</td>
+														<td>$1200</td>
+														<td><a href="ticket.pdf" class="button small">Ver Ticket</a></td>
+													</tr>
+													<tr>
+														<td>2018</td>
+														<td>Marzo-03</td>
+														<td>25/09/2017</td>
+														<td>22/09/2017</td>
+														<td>$1200</td>
+														<td><a href="ticket.pdf" class="button small">Ver Ticket</a></td>
+													</tr>
+													<tr>
+														<td>2018</td>
+														<td>Feb-02</td>
+														<td>25/09/2017</td>
+														<td>22/09/2017</td>
+														<td>$400</td>
+														<td><a href="ticket.pdf" class="button small">Ver Ticket</a></td>
+													</tr>
+													<tr>
+														<td>2017</td>
+														<td>Sep-09</td>
+														<td>25/09/2017</td>
+														<td>22/09/2017</td>
+														<td>$800</td>
+														<td><a href="ticket.pdf" class="button small">Ver Ticket</a></td>
+													</tr>
+													<tr>
+														<td>2017</td>
+														<td>Sep-09</td>
+														<td>25/09/2017</td>
+														<td>22/09/2017</td>
+														<td>$800</td>
+														<td><a href="ticket.pdf" class="button small">Ver Ticket</a></td>
+													</tr>
+													<tr>
+														<td>2017</td>
+														<td>Sep-09</td>
+														<td>25/09/2017</td>
+														<td>22/09/2017</td>
+														<td>$800</td>
+														<td><a href="ticket.pdf" class="button small">Ver Ticket</a></td>
+													</tr>
+													<tr>
+														<td>2017</td>
+														<td>Sep-09</td>
+														<td>25/09/2017</td>
+														<td>22/09/2017</td>
+														<td>$800</td>
+														<td><a href="ticket.pdf" class="button small">Ver Ticket</a></td>
+													</tr>
+												</tbody>
+												<tfoot>
+												</tfoot>
+											</table>
+								</div>
+								<br/>
+
+							</section>
+							<br/>
+							<div class="align-center">
+								<a href="javascript:window.history.go(-1);" class="button">Volver</a>
+							</div>
+						</div>
+					</section>
+			</div>
+
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt ">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">G6 Mates</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script>
+				function desoculta() {
+    				var value = document.getElementById("filtro").style.display;
+    				if (value == "none") {
+        				document.getElementById("filtro").style.display = "block";
+    						} else {
+        				document.getElementById("filtro").style.display = "none";
+    					}
+					}
+			</script>
+
+	</body>
+</html>
