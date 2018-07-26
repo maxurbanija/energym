@@ -4,7 +4,7 @@
 -->
 <html>
 	<head>
-		<title>PE: Crear nueva ficha</title>
+		<title>PE: Crear nueva rutina</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--Hacemos que la pagina sea responsive-->
@@ -22,9 +22,9 @@
 						<ul>
 							<li><a>Inicio</a></li>
 							<li><a>Asistencia</a></li>
-							<li><a href="#crearficha">Seguimiento</a></li>
+							<li><a>Seguimiento</a></li>
 							<li><a>Clases</a></li>
-							<li><a>Rutinas</a></li>
+							<li><a href="#crearficha">Rutinas</a></li>
 							<li><a>Cerrar Sesion</a></li>
 						</ul>
 					</nav>
@@ -37,14 +37,8 @@
 					<!-- ingresar los nuevos datos -->
 						<section id="crearficha" class="wrapper">
 							<div class="inner">
-								<h1 class="major">Nueva Ficha</h1>
+								<h1 class="major">Nueva Rutina</h1>
 								<section>
-								<p>
-									Nombre: Jill Smith <br/>
-									Fecha de Nacimiento: 10/01/1909 <br/>
-									DNI: 22000123 <br/>
-									Ficha Médica: Presentada
-								</p>
 								<h4>Complete todos los campos obligatorios(*)</h4>
 									</br>
 								<select name="disciplinaficha" id="disciplinaficha">
@@ -54,23 +48,12 @@
 									<option value="1">Taekwondo</option>
 								</select>
 								</br>
-								<select name="turnoficha" id="turnoficha">
-								<option value="">- Horarios* -</option>
-								<option value="1">Lunes 17:30-18:30hs</option>
-								<option value="1">Miércoles 17:30-18:30hs</option>
-								<option value="1">Viernes 17:30-18:30hs</option>
-							</select>
-							</br>
-								<div class="6u 12u$(xsmall)">
-									<input type="text" name="pesoficha" id="pesoficha" value="" placeholder="Peso (Kg)" />
+								<div class="12u$">
+									<textarea name="demo-message" id="demo-message" placeholder="Detalla la rutina" rows="6"></textarea>
 								</div>
 								</br>
-								<div class="6u 12u$(xsmall)">
-									<input type="text" name="alturaficha" id="alturaficha" value="" placeholder="Altura (m)" />
-								</div>
-								<br/>
 								<div class="align-left">
-									<a href="seguimiento.html" class="button submit">Guardar</a>
+									<a href="rutinas.html" class="button submit">Guardar</a>
 								</div>
 								</section>
 								<div class="align-center">

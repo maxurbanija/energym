@@ -45,10 +45,27 @@
 							<h3>Ingrese los siguientes datos:</h2>
 
 									<form method="post" class="6u" action="clientes.html">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre Evento" />
-										<br/>
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Fecha (dd/mm/aaaa)" />
-										<br/>
+										<li>Nombre del evento: <input style="width:12em;display:inline-block" type="text" name="nombre" id="nombreEvento"  value="" /></li>
+										<br>
+										<li>Fecha del Evento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac"  value="" /></li>
+										<br>
+										<li>Descripción: <input style="width:18em;display:inline-block" type="text" name="nombre" id="descripcion"  value="" /></li>
+										<br>
+										<li>Disciplina: <select  class="4u"name="disciplina" id="disciplina" onchange="desoculta(this.options[this.selectedIndex].value)"><option value="0">- Seleccionar Disciplina -</option>
+													<option value="1">Funcional</option>
+													<option value="2">Complemento</option>
+													<option value="3">Aerobox</option>
+													<option value="4">Kick Boxing</option>
+													<option value="5">Spining</option>
+													<option value="6">TaekWondo</option>
+													<option value="7">Yoga</option>
+													<option value="8">Zumba</option>
+												</select></li>
+										<br>
+										<li>Horario: <input style="width:18em;display:inline-block" type="text" name="hora" id="horario"  value="" /></li>
+										<br>
+										<li>Ubicación: <input style="width:18em;display:inline-block" type="text" name="lugar" id="ubicacion"  value="" /></li>
+										<br>
 									</form>
 									<div class="align-left">
 										<a href="disciplinas.html" class="button icon fa-save">Guardar</a>
