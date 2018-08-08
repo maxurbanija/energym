@@ -215,7 +215,7 @@
 									<button type="button" onclick="guarda(this)" name="button">Cerrar</button>
 								</div>
 								<div  id="info" class="">
-									<h3>Cliente</h3>
+									<h3>Empleado</h3>
 									<div class="col-md-12" align="center">
 										<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
 									</div>
@@ -273,7 +273,7 @@
 									<button type="button" onclick="registrar(this)" name="button">Cerrar</button>
 								</div>
 								<div id="infonue" class="">
-									<h3>Cliente</h3>
+									<h3>Empleado</h3>
 									<div class="col-md-12" align="center">
 										<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
 									</div>
@@ -284,23 +284,26 @@
 
 														<ul class="alt" >
 															<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre"  value="" /></li>
-															<li>DNI:      <input style="width:12em;display:inline-block" type="text" name="nombre" id="dni"  value="" /></li>
+															<li>DNI:      <input style="width:12em;display:inline-block" type="text" name="numdni" id="dni"  value="" /></li>
 															<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono"  value=""/></li>
 															<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo"  value="" /></li>
 															<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac"  value="" /></li>
-															<li>Disciplinas Inscriptas: <i>No registra disciplinas por el momento.</i></li>
+															<li>Cargo: <H5>Secretaria
+																<input type="radio" enabled="enabled" id="a28" name="a28"><label for="a28"></label>
+															Entrenador
+																<input type="radio" enabled="enabled" id="a28" name="a28"><label for="a28"></label>
+															</H5></li>
 															<li>Fecha de Ingreso:      <code>
 																<script type="text/javascript">
 																	var d = new Date();
 																	document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
 																</script>
 																	</code></li>
-															<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso"  value="" /></li>
-															<li>Altura(cm):                <input style="width:4em;display:inline-block" type="tel" name="alt" id="alt"  value="" /></li>
 														</ul>
 
 												</div>
 												<div class="4u align-left" style="margin:20px">
+													<li><a href="#" class="button icon fa-upload">Subir foto</a></li>
 													<li><i>Vencimientos, Eventos, Control de Rutinas y Disciplinas:</i></li>
 													<li><i>Informacion no disponible.</i></li>
 												</div>
