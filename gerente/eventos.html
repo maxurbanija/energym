@@ -109,8 +109,21 @@
 											</code>
 										</pre>
 									</div>
-								<div class="align-left">
-									<a href="nuevoEvento.html" class="button">Agregar evento</a>
+								
+
+									<div class="align-left" style="margin-bottom:10px">
+										<a href="nuevoEvento.html" class="button">Agregar evento</a>
+										<a onclick="desoculta(this)" class="button">Lista de Eventos</a>
+									</div>
+								
+								<div id="lista" class="" style="display:none;margin-left:20px">
+									<div>
+										<h4>Lista de Eventos:
+										<li>17/05 SuperClass de Zumba</li>
+										<li>30/05 Encuentro Kick Boxing</li>
+										
+										</h4>
+									</div>
 								</div>
 							</section>
 							<div class="align-center">
@@ -139,6 +152,17 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+
+			<script>
+			function desoculta() {
+				var value = document.getElementById("lista").style.display;
+				if (value == "none") {
+					document.getElementById("lista").style.display = "block";
+						} else {
+					document.getElementById("lista").style.display = "none";
+					}
+				}
+			</script>
 
 	</body>
 </html>

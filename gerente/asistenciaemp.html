@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>PS: Asistencia</title>
+		<title>PG: Asistencia</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -25,7 +25,7 @@
 						<ul>
 							<li><a >Inicio</a></li>
 							<li><a >Clientes</a></li>
-							<li><a href="#Entrenadores">Entrenadores</a></li>
+							<li><a href="#Empleados">Empleados</a></li>
 							<li><a >Disciplinas</a></li>
 							<li><a >Eventos</a></li>
 							<li><a >Cerrar Sesion</a></li>
@@ -38,75 +38,62 @@
 		<!-- Wrapper -->
 
 			<div id="wrapper">
-				<section id="Entrenadores" class="wrapper">
+				<section id="Empleados" class="wrapper">
 
 					<div class="inner">
-						<h1 class="major">Asistencia Empleados</h1>
-						<p></p>
+						<h1 class="major">Historial de Asistencia</h1>
 						<section>
-							<div class="" style="align="left"">
-								<a onclick="desoculta(this)" class="button">Historial de Asistencia</a>
-							</div>
-							<div class="align-center">
-								<h4>Nombre:   <code>Santino Zaracho</code></h4>
-								<h4>DNI:   <code>39.999.999</code></h4>
-								<h2></h2>
-								<div style="margin-left: auto;margin-right: auto" class="box 6u">
-										<h3 class="align-center"><i>Asistencia de Hoy</i></h3>
-										<div class="align-left">
-											<h4>Dia:<code>
-												<script type="text/javascript">
-													var d = new Date();
-													document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
-												</script>
-													</code></h4>
-											<h4>Disciplina:
-												<select  class="4u" onchange="habcarga(this.options[this.selectedIndex].value)" name="disciplinas" style="display:inline-block;height:30px" id="disciplinas" >
-																<option value="0">- Seleccione -</option>
->>>>>>> master
-
-																<option value="0" onchange="desocultatur(this.options[this.selectedIndex].value)">No asiste</option>
-																<option value="1">Complemento</option>
-																<option value="1">Funcional</option>
-																<option value="1">Aerobox</option>
-															</select></h4>
-
-											<H4>Justificada
-												<input type="radio" enabled="enabled" id="a29" name="a29">
-												<label for="a29"></label>
-											</H4>
-										</div>
-										<div class="align-center">
-											<button id="cargar" class="button ">Cargar</button>
-										</div>
-								</div>
-							</div>
-							<h3></h3>
-							<div id="historial" class="" style="display:none">
+							
+							<div id="historial" class="" style="">
 								<div class="table-wrapper">
 												<table>
 													<thead>
 														<tr>
 															<th>Días</th>
 															<th>Asistió</th>
+															<th>Justificada</th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr>
 															<td>25/06/2018</td>
 															<td>Si</td>
+															<td>
+															  <div class="4u 12u$(small)">
+														 		<input type="radio" disabled="disabled" id="a25" name="a25">
+																<label for="a25"></label>
+															  </div>
+															</td>
 														</tr>
 														<tr>
 															<td>26/06/2018</td>
 															<td>No</td>
+															<td>
+																  <div class="4u 12u$(small)">
+															 		<input type="radio"  checked="checked" disabled="disabled" id="a27" name="a27">
+																	<label for="a27"></label>
+																  </div>
+															</td>
 														</tr>
 														<tr>
 															<td>27/06/2018</td>
 															<td>Si</td>
+															<td>
+															  <div class="4u 12u$(small)">
+														 		<input type="radio" disabled="disabled" id="a25" name="a25">
+																<label for="a25"></label>
+															  </div>
+															</td>
 														</tr>
 														<tr>
 															<td>28/06/2018</td>
 															<td>No</td>
+															<td>
+															  <div class="4u 12u$(small)">
+														 		<input type="radio" disabled="disabled" id="a25" name="a25">
+																<label for="a25"></label>
+															  </div>
+															</td>
 														</tr>
 
 												</tbody>
