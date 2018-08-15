@@ -57,9 +57,16 @@
 										<h3>Seleccione un horario para ver la lista</h3>
 										<select name="turnos"class="4u" onchange="desoculta(this.options[this.selectedIndex].value)"  >
 											<option value="0">- Horarios -</option>
-											<option value="1">Lunes 15:30-16:30hs</option>
-											<option value="1">Miercoles 15:30-16:30hs</option>
-											<option value="1">Viernes 15:30-16:30hs</option>
+											<option value="1">Lunes 14:00-15:00hs</option>
+											<option value="1">Lunes 18:00-19:00hs</option>
+											<option value="1">Lunes 19:00-20:00hs</option>
+											<option value="1">Martes 18:00-19:00hs</option>
+											<option value="1">Miércoles 14:00-15:00hs</option>
+											<option value="1">Miércoles 18:00-19:00hs</option>
+											<option value="1">Jueves 18:00-19:00hs</option>
+											<option value="1">Viernes 14:00-15:00hs</option>
+											<option value="1">Viernes 18:00-19:00hs</option>
+											<option value="1">Viernes 19:00-20:00hs</option>
 										</select>
 									</div>
 									<br/>
@@ -187,8 +194,7 @@
 												<thead>
 													<tr>
 														<th>DNI</th>
-														<th>Nombre</th>
-														<th>Apellido</th>
+														<th>Nombre y Apellido</th>
 														<th>Edad</th>
 														<th>Asistio</th>
 														<th>Ficha de seguimiento</th>
@@ -197,24 +203,83 @@
 												<tbody>
 													<tr>
 													  <td>22000123</td>
-													  <td>Jill</td>
-													  <td>Smith</td>
+													  <td>Jill Smith</td>
+													  <td>109</td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" checked="checked" disabled="disabled" id="d1" name="d1">
+														<label for="d1"></label>
+													  </div>
+													  </td>
+													  <td><a href="fichacliente.html" class="button small">Ver</a></td>
+													</tr>
+													<tr>
+													  <td>33111456</td>
+													  <td>Eve Jackson</td>
+													  <td>74</td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" checked="checked" disabled="disabled" id="d2" name="d2">
+														<label for="d2"></label>
+													  </div>
+													  </td>
+													  <td><a href="SinFicha.html" class="button small">Ver</a></td>
+													</tr>
+													<tr>
+													  <td>29999999</td>
+													  <td>Marcelo Tinelli</td>
+													  <td>94</td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" checked="checked" disabled="disabled" id="d3" name="d3">
+														<label for="d3"></label>
+													  </div>
+													  </td>
+													  <td><a href="fichacliente.html" class="button small">Ver</a></td>
+													</tr>
+													<tr>
+													  <td>22000123</td>
+													  <td>Jill Smith</td>
 													  <td>109</td>
 													  <td><div class="4u 12u$(small)"><input type="radio" disabled="disabled" disabled="disabled" checked="checked" id="a1" name="a1"><label for="a1"></label></div></td>
 													  <td><a href="fichacliente.html" class="button small">Ver</a></td>
 													</tr>
 													<tr>
 													  <td>33111456</td>
-													  <td>Eve</td>
-													  <td>Jackson</td>
+													  <td>Eve Jackson</td>
 													  <td>74</td>
-													  <td><div class="4u 12u$(small)"><input type="radio" disabled="disabled" id="a2" disabled="disabled" name="a2"><label for="a2"></label></div></td>
-													  <td><a href="SinFicha.html" class="button small">Sin FM</a></td>
+													  <td>
+													  <div class="4u 12u$(small)">
+												 		<input type="radio" checked="checked" disabled="disabled" id="c2" name="c2">
+														<label for="c2"></label>
+													  </div>
+													  </td>
+													  <td><a href="SinFicha.html" class="button small">Ver</a></td>
 													</tr>
 													<tr>
 													  <td>29999999</td>
-													  <td>Marcelo</td>
-													  <td>Tinelli</td>
+													  <td>Marcelo Tinelli</td>
+													  <td>94</td>
+													  <td><div class="4u 12u$(small) "><input type="radio" disabled="disabled" disabled="disabled" checked="checked" id="a3" name="a3"><label for="a3"></label></div></td>
+													  <td><a href="fichacliente.html" class="button small">Ver</a></td>
+													</tr>
+													<tr>
+													  <td>22000123</td>
+													  <td>Jill Smith</td>
+													  <td>109</td>
+													  <td><div class="4u 12u$(small)"><input type="radio" disabled="disabled" disabled="disabled" checked="checked" id="a1" name="a1"><label for="a1"></label></div></td>
+													  <td><a href="fichacliente.html" class="button small">Ver</a></td>
+													</tr>
+													<tr>
+													  <td>33111456</td>
+													  <td>Eve Jackson</td>
+													  <td>74</td>
+													  <td><div class="4u 12u$(small)"><input type="radio" disabled="disabled" id="a2" disabled="disabled" name="a2"><label for="a2"></label></div></td>
+													  <td><a href="SinFicha.html" class="button small">Ver</a></td>
+													</tr>
+													<tr>
+													  <td>29999999</td>
+													  <td>Marcelo Tinelli</td>
 													  <td>94</td>
 													  <td><div class="4u 12u$(small) "><input type="radio" disabled="disabled" disabled="disabled" checked="checked" id="a3" name="a3"><label for="a3"></label></div></td>
 													  <td><a href="fichacliente.html" class="button small">Ver</a></td>
