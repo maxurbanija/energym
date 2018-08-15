@@ -39,23 +39,157 @@
 					<!-- datos del entrenador -->
 						<section id="seguimiento" class="wrapper">
 							<div class="inner">
-								<h1 class="major">Buscar Cliente</h1>
+								<h1 class="major">Buscar Alumno</h1>
+								<div class="align-left" style="margin-bottom:10px">
+									<a onclick="desoculta(this)" class="button">Filtar</a>
+								</div>
+								<div id="filtro" class="" style="display:none;margin-left:20px">
+									<div>
+										<h4>Por:
+										<input style="width:12em;height: 1.8em;display:inline-block" type="text" name="Fini" placeholder="Nombre">
+										<input style="width:10em;display:inline-block" type="tel" name="Ffin" placeholder="DNI">
+										</h4>
+									</div>
+								</div>
 								<section>
-									<h3>Para acceder al seguimiento de un cliente ingrese el DNI.</h3>
-									<form method="post" action="fichacliente.html">
-										<div class="6u field half first">
-											<label for="dni"></label>
-											<input type="tel" name="dni" id="dni"/>
-										</div>
-										<a  class="button submit">Buscar</a>
-									</form>
-									<h3>O puede crear una Ficha si no la tiene. </h3>
-									<div >
-										<a href="crearficha.html" class="button">Crear nueva ficha</a>
+									<h2></h2>
+									<h3></h3>
+									<div class="table-wrapper">
+										<table>
+													<thead>
+														<tr>
+															<th>Nombre y Apellido</th>
+															<th>DNI</th>
+															<th>Telefono</th>
+															<th>Edad</th>
+															<th>Control</th>
+															<th></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Bruno Feresin</td>
+															<td>23.155.364</td>
+															<td>3625459876</td>
+															<td>25</td>
+															<td>No</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</td>
+
+														</tr>
+														<tr>
+															<td>Max Urbanija</td>
+															<td>35.162.346</td>
+														 	<td>3794568712</td>
+														 	<td>26</td>
+														 	<td>No</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Santino Zaracho</td>
+															<td>39.456.213</td>
+															<td>3794568942</td>
+															<td>22</td>
+															<td>Si</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Bruno Feresin</td>
+															<td>23.155.364</td>
+															<td>3625459876</td>
+															<td>25</td>
+
+															<td>No</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Max Urbanija</td>
+															<td>35.162.346</td>
+														 	<td>3794568712</td>
+														 	<td>26</td>
+
+														 	<td>No</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Santino Zaracho</td>
+															<td>39.456.213</td>
+															<td>3794568942</td>
+															<td>22</td>
+
+															<td>Si</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Bruno Feresin</td>
+															<td>23.155.364</td>
+															<td>3625459876</td>
+															<td>25</td>
+
+															<td>No</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Max Urbanija</td>
+															<td>35.162.346</td>
+														 	<td>3794568712</td>
+														 	<td>26</td>
+
+														 	<td>No</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Santino Zaracho</td>
+															<td>39.456.213</td>
+															<td>3794568942</td>
+															<td>22</td>
+
+															<td>Si</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Bruno Feresin</td>
+															<td>23.155.364</td>
+															<td>3625459876</td>
+															<td>25</td>
+															<td>No</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Max Urbanija</td>
+															<td>35.162.346</td>
+														 	<td>3794568712</td>
+														 	<td>26</td>
+														 	<td>No</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+														<tr>
+															<td>Santino Zaracho</td>
+															<td>39.456.213</td>
+															<td>3794568942</td>
+															<td>22</td>
+															<td>Si</td>
+															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
+
+														</tr>
+													</tbody>
+													<tfoot>
+													</tfoot>
+												</table>
 									</div>
 									<br/>
 								</section>
-								<div class="align-center"><a href="javascript:window.history.go(-1);" class="button">Volver</a></div>
+
+								<div style="margin:30px" class="align-center"><a href="javascript:window.history.go(-1);" class="button">Volver</a></div>
 							</div>
 						</section>
 				</div>
@@ -77,6 +211,15 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
-
+			<script>
+				function desoculta() {
+					var value = document.getElementById("filtro").style.display;
+					if (value == "none") {
+						document.getElementById("filtro").style.display = "block";
+							} else {
+						document.getElementById("filtro").style.display = "none";
+						}
+					}
+			</script>
 	</body>
 </html>
