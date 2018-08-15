@@ -229,7 +229,8 @@
 														<li>DNI:      <code>33.258.259</code></li>
 														<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono" disabled value="3624-652865"/></li>
 														<li>Fecha de Nacimiento:<input style="width:10.5em;display:inline-block" type="date" name="fecnac" id="fecnac" disabled value="1995-05-15" /></li>
-														<li>Direccion:<input style="width:12em;display:inline-block" type="text" name="dir" id="dir" disabled value="Ameguhino 22 - Resistencia" /></li>
+														<li>Direccion:<input style="width:12em;display:inline-block" type="text" name="dir" id="dir" disabled value="Ameguhino 22" /></li>
+														<li>Localidad:<input style="width:12em;display:inline-block" type="text" name="loc" id="loc" disabled value="Resistencia" /></li>
 														<li>Objetivos:<input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo" disabled value="Entrenamiento para Competencia" /></li>
 														<li>Fecha de Ingreso:      <code>20/10/2013</code></li>
 														<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso" disabled value="89" /></li>
@@ -442,6 +443,8 @@
 					document.getElementById("nombre").disabled = true;
 					document.getElementById("telefono").disabled = true;
 					document.getElementById("fecnac").disabled = true;
+					document.getElementById("dir").disabled = true;
+					document.getElementById("loc").disabled = true;
 					document.getElementById("objetivo").disabled = true;
 					document.getElementById("dismodi").style.display = "none";
 					document.getElementById("evemodi").style.display = "none";
@@ -456,7 +459,9 @@
 					document.getElementById("nombre").disabled = false;
 					document.getElementById("telefono").disabled = false;
 					document.getElementById("fecnac").disabled = false;
-					document.getElementById("objetivo").disabled = false;
+					document.getElementById("dir").disabled = true;
+					document.getElementById("loc").disabled = true;
+					document.getElementById("objetivo").disabled = false;	
 					document.getElementById("dismodi").style.display = "block";
 					document.getElementById("conmodi").style.display = "block";
 					document.getElementById("evemodi").style.display = "block";
