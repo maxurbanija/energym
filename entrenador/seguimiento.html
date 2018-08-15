@@ -94,7 +94,7 @@
 															<td>Resistencia</td>
 															<td>3794568942</td>
 															<td>22</td>
-															<td><a href="fichacliente.html" class="button small">Hoy</a></td>
+															<td><a onclick="cargarControl(this);" class="button special small">Hoy</a></td>
 															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
 
 														</tr>
@@ -124,7 +124,7 @@
 															<td>Resistencia</td>
 															<td>3794568942</td>
 															<td>22</td>
-															<td><a href="fichacliente.html" class="button small">Hoy</a></td>
+															<td><a onclick="cargarControl(this);" class="button special small">Hoy</a></td>
 															<td><a href="fichacliente.html" class="button small">Ver Ficha</a></td>
 
 														</tr>
@@ -181,7 +181,7 @@
 														<tr>
 															<td>Santino Zaracho</td>
 															<td>39.456.213</td>
-															<td>Resistencia</td> 
+															<td>Resistencia</td>
 															<td>3794568942</td>
 															<td>22</td>
 															<td>23/10</td>
@@ -196,6 +196,60 @@
 									<br/>
 								</section>
 
+								<div id="modalcontrol" class="modal">
+									<div class="modal-content">
+										<span class="close">&times;</span>
+
+										<div  id="exito" class="" style="display:none" >
+											<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">Se ha cargado el Control correctamente.</h3>
+											<button type="button" onclick="cargarControl(this)" name="button">Cerrar</button>
+										</div>
+
+
+										<div id="control" class="">
+											<div class="col-md-12" align="center">
+												<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
+											</div>
+											<div class="box" style="margin:60px">
+												<div class="row uniform">
+														<h4>Fecha Control:
+															<code>
+																<script type="text/javascript">
+																	var d = new Date();
+																	document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+																</script>
+															</code>
+														</h4>
+														</br>
+														<h3 >Apellido y Nombre:  Sr. <code>Feresin, Bruno Damian</code> </h3>
+														<ul class="alt" style="margin:40px" >
+																	<li><u>Datos Personales:</u></li>
+																	<li>DNI:   <code>32.452.548</code> </li>
+																	<li>Edad: <code>32</code></li>
+																	<li>Objetivo: <code>Perder 5kg en 20 dias.</code> </li>
+																	<li>Disciplinas Inscriptas:</br>
+																		<div class="tooltip"><code>Aerobox</code><span class="tooltiptext">Lunes, Miercoles <br/> y Viernes 18:00 hs</span></div></br>
+																		<div class="tooltip"><code>Complemento</code><span class="tooltiptext">Lunes a Sabados <br/>todo el dia hs</span></div></br>
+																		<div class="tooltip"><code>TaekWondo</code><span class="tooltiptext">Martes y Jueves <br/> 19:00 hs</span></div>
+																	</li>
+																	<li></li>
+																	<li><u>Informacion de Control:</u></li>
+																	<li>Nuevo Objetivo: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo"  value="" /></li>
+																	<li>Talla (cm): <input style="width:4em;display:inline-block" type="tel" name="talla" id="talla"  value="" /></li>
+																	<li>Peso (kg):  <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso"  value="" /></li>
+																	<li>Altura (cm):<input style="width:4em;display:inline-block" type="tel" name="alt" id="alt"  value="" /></li>
+																	<li></li>
+																	<li><u>Informacion de Proximo Control:</u> <input type="date" style="width: 10em" name="fechaprox" value=""></li>
+																</ul>
+													</div>
+											</div>
+
+											<a onclick="cargar(this)" class="button submit">Registrar Control</a>
+											<button type="button" onclick="javascript:document.getElementById('modalcontrol').style.display = 'none';" name="button">Cancelar</button>
+										</div>
+
+									</div>
+								</div>
 								<div style="margin:30px" class="align-center"><a href="javascript:window.history.go(-1);" class="button">Volver</a></div>
 							</div>
 						</section>
@@ -227,6 +281,38 @@
 						document.getElementById("filtro").style.display = "none";
 						}
 					}
+			</script>
+			<script>
+				function cargarControl() {
+					var value = document.getElementById("modalcontrol").style.display;
+					if (value == "none") {
+						document.getElementById("exito").style.display = 'none';
+						document.getElementById("control").style.display = 'block';
+						document.getElementById("modalcontrol").style.display = 'block';
+							} else {
+						document.getElementById("modalcontrol").style.display = 'none';
+						}
+					}
+				function cargar(){
+					document.getElementById("control").style.display = 'none';
+					document.getElementById("exito").style.display = 'block';
+					}
+			</script>
+			<script>
+			var modalcontrol = document.getElementById('modalcontrol');
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modalcontrol.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modalcontrol) {
+					modalcontrol.style.display = "none";
+				}
+			}
 			</script>
 	</body>
 </html>
