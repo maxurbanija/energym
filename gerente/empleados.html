@@ -39,9 +39,8 @@
 				<section id="empleados" class="wrapper">
 					<div class="inner">
 						<h1 class="major">Empleados</h1>
-						<p></p>
 						<div class="align-left">
-							<a onclick="modalnue(this);" class="button">Nuevo Empleado</a>
+							<a id="nuevoemp" class="button">Nuevo Empleado</a>
 							<span style="margin-left:40px"></span>
 							<a href="historial.pdf" class="button"><img src="images/pdf.png" width="18px"> Imprimir</a>
 						</div>
@@ -58,7 +57,7 @@
 								<select  class="2u" name="cargo" style="display:inline-block;height:1.8em" id="cargo" >
 									<option value="0">- Todos -</option>
 									<option value="1">Secretarios</option>
-									<option value="1">Entrenadores</option>
+									<option value="2">Entrenadores</option>
 								</select>
 								</h4>
 							</div>
@@ -81,7 +80,7 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
+													<td><a id="" >Bruno Feresin</a></td>
 													<td>23.155.364</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Resistencia</td>
@@ -91,7 +90,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Max Urbanija</a></td>
+													<td><a onclick="modal(1);">Max Urbanija</a></td>
 													<td>35.162.346</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Corrientes</td>
@@ -101,7 +100,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
+													<td><a onclick="modal(1);">Santino Zaracho</a></td>
 													<td>39.456.213</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Resistencia</td>
@@ -111,7 +110,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
+													<td><a onclick="modaldat(2);">Bruno Feresin</a></td>
 													<td>23.155.364</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Corrientes</td>
@@ -121,7 +120,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Max Urbanija</a></td>
+													<td><a onclick="modaldat(2);">Max Urbanija</a></td>
 													<td>35.162.346</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Resistencia</td>
@@ -131,7 +130,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
+													<td><a onclick="modaldat(2);">Santino Zaracho</a></td>
 													<td>39.456.213</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Corrientes</td>
@@ -141,7 +140,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
+													<td><a onclick="modaldat(2);">Bruno Feresin</a></td>
 													<td>23.155.364</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Resistencia</td>
@@ -151,7 +150,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Max Urbanija</a></td>
+													<td><a onclick="modaldat(2);">Max Urbanija</a></td>
 													<td>35.162.346</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Corrientes</td>
@@ -161,7 +160,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
+													<td><a onclick="modaldat(2);">Santino Zaracho</a></td>
 													<td>39.456.213</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Resistencia</td>
@@ -171,7 +170,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Bruno Feresin</a></td>
+													<td><a onclick="modaldat(2);">Bruno Feresin</a></td>
 													<td>23.155.364</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Corrientes</td>
@@ -181,7 +180,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Max Urbanija</a></td>
+													<td><a onclick="modaldat(2);">Max Urbanija</a></td>
 													<td>35.162.346</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Resistencia</td>
@@ -191,7 +190,7 @@
 
 												</tr>
 												<tr>
-													<td><a onclick="modaldat(this);">Santino Zaracho</a></td>
+													<td><a onclick="modaldat(2);">Santino Zaracho</a></td>
 													<td>39.456.213</td>
 													<td>Calle Falsa 123 - R</td>
 													<td>Corrientes</td>
@@ -208,20 +207,28 @@
 							<br/>
 						</section>
 						<br/>
+								<!-- Boton Volver -->
 						<div class="align-center">
 							<a href="javascript:window.history.go(-1);" class="button">Volver</a>
 						</div>
 
-			<!-- Seccion PopPups -->
+								<!-- Seccion PopPups -->
 
 						<div id="modaldatos" class="modal">
 							<div class="modal-content">
 								<span class="close">&times;</span>
-								<div  id="exito" class="" style="display:none" >
+
+								<div id="exito" style="display:none" >
 									<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">Se ha Modificado los datos correctamente.</h3>
-									<button type="button" onclick="guarda(this)" name="button">Cerrar</button>
+									<button type="button" onclick="cerrar(this)" name="button">Cerrar</button>
 								</div>
-								<div  id="info" class="">
+
+								<div id="exitonue" style="display:none" >
+									<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">Se ha REgistrado el nuevo empleado correctamente.</h3>
+									<button type="button" onclick="cerrar(this)" name="button">Cerrar</button>
+								</div>
+
+								<div id="infoentre" style="display:none" >
 									<h3>Empleado</h3>
 									<div class="col-md-12" align="center">
 										<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
@@ -269,17 +276,7 @@
 									</div>
 								</div>
 
-							</div>
-						</div>
-
-						<div id="modalnuevo" class="modal">
-							<div class="modal-content">
-								<span class="close">&times;</span>
-								<div  id="exitonue" class="" style="display:none" >
-									<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">Se ha Modificado los datos correctamente.</h3>
-									<button type="button" onclick="registrar(this)" name="button">Cerrar</button>
-								</div>
-								<div id="infonue" class="">
+								<div id="infosecre" style="display:none" >
 									<h3>Empleado</h3>
 									<div class="col-md-12" align="center">
 										<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
@@ -297,7 +294,7 @@
 															<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono"  value=""/></li>
 															<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo"  value="" /></li>
 															<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac"  value="" /></li>
-															
+
 														</ul>
 
 												</div>
@@ -324,9 +321,56 @@
 									<a id="registra" class="button submit">Registrar</a>
 									<button type="button" onclick="javascript:document.getElementById('modalnuevo').style.display = 'none';" name="button">Cancelar</button>
 								</div>
-							</div>
-						</div>
 
+								<div id="infonue" style="display:none" >
+									<h3>Empleado</h3>
+									<div class="col-md-12" align="center">
+										<img class="img-responsive img-portfolio img-hover" src="images/perfil.png" width="20%">
+									</div>
+									<form class="" action="" method="post">
+										<div class="box" style="margin:60px">
+											<div class="row uniform">
+												<div class="6u align-left" style="margin:20px">
+
+														<ul class="alt" >
+															<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre"  value="" /></li>
+															<li>DNI:      <input style="width:12em;display:inline-block" type="text" name="numdni" id="dni"  value="" /></li>
+															<li>Dirección:      <input style="width:12em;display:inline-block" type="text" name="numdni" id="dni"  value="" /></li>
+															<li>Localidad:      <input style="width:12em;display:inline-block" type="text" name="numdni" id="dni"  value="" /></li>
+															<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono"  value=""/></li>
+															<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo"  value="" /></li>
+															<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac"  value="" /></li>
+
+														</ul>
+
+												</div>
+												<div class="4u align-left" style="margin:10px">
+													<li>Cargo: </li>
+															<br><input type="radio" enabled="enabled" id="a27" name="a270"><label for="a27">Secretaria</label>
+															<input type="radio" enabled="enabled" id="a28" name="a280"><label for="a28">Entrenador</label>
+															</br>
+														</br>
+															<li>Fecha de Ingreso:      <code>
+																<script type="text/javascript">
+																	var d = new Date();
+																	document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+																</script>
+																	</code></li>
+																</br>
+															</br>
+													<li><a href="#" class="button icon fa-upload">Subir foto</a></li>
+												</div>
+
+											</div>
+										</div>
+									</form>
+									<a id="registra" class="button submit">Registrar</a>
+									<button type="button" onclick="javascript:document.getElementById('modalnuevo').style.display = 'none';" name="button">Cancelar</button>
+								</div>
+
+							</div>
+
+						</div>
 					</div>
 				</section>
 		</div>
@@ -362,18 +406,7 @@
 				}
 		</script>
 		<script type="text/javascript">
-			function guarda(){
-				document.getElementById('modaldatos').style.display = 'none';
-				modal.style.display = "none";
-				document.getElementById("info").style.display = "block";
-				document.getElementById("exito").style.display = "none";
-			}
-			function registrar(){
-				document.getElementById('modalnuevo').style.display = 'none';
-				modaldat.style.display = "none"
-				document.getElementById("infonue").style.display = "block";
-				document.getElementById("exitonue").style.display = "none";
-			}
+
 
 
 		</script>
@@ -420,48 +453,61 @@
 
 			}
 		</script>
+
 		<script>
-			function modaldat() {
-				document.getElementById('modaldatos').style.display = "block";
-			}
-			function modalnue(){
-				document.getElementById('modalnuevo').style.display = "block";
-			}
-		</script>
-		<script>
+
+
 			// Get the modal
-			var modaldatos = document.getElementById('modaldatos');
-			var modal = document.getElementById('modalnuevo');
-			var infodat = document.getElementById("info");
-			var infonue = document.getElementById("infonue");
+			var modal = document.getElementById('modal');
+			// Obtiene las diferntes pantallas de informacion
+			var secre = document.getElementById("infosecre");
+			var entre = document.getElementById("infoentre");
+			var nuevo = document.getElementById("infonue");
+			//Obtiene las Pantallas de exito
+			var exito = document.getElementById("exito");
+			var exitonue = document.getElementById("exitonue");
+
+
+			// Abre el Modal
+			function modal(usuario) {
+				document.modal.style.display = "block";
+				if (usuario == 0) {
+					document.nuevo.style.display = "block";
+					}else {
+						if (usuario == 1) {
+							document.secre.style.display = "block";
+							}else {
+								document.entre.style.display = "block";
+							}
+					}
+				}
+
+			// Botones Guardar o registrar
+			function cerrar(){
+				modal.style.display = "none";
+				exito.style.display = "none";
+				exitonue.style.display = "none";
+
+			}
 
 			// Get the <span> element that closes the modal
-			var spandat = document.getElementsByClassName("close")[0];
 			var span = document.getElementsByClassName("close")[1];
 
 			// When the user clicks on <span> (x), close the modal
-			spandat.onclick = function() {
-				modaldatos.style.display = "none";
-				modal.style.display = "none";
-			}
 			span.onclick = function() {
-				modaldatos.style.display = "none";
 				modal.style.display = "none";
 			}
 
 			// When the user clicks anywhere outside of the modal, close it
 			window.onclick = function(event) {
 				if (event.target == modaldatos) {
-					if (infodat.style.display == "none") {
-						guarda()}
-					modaldatos.style.display = "none";
+					if (secre.style.display == "none") {
+						guardar()}
 					modal.style.display = "none";
-
 				}else {
 					if (event.target == modal) {
-						if (infonue.style.display == "none") {
+						if (nuevo.style.display == "none") {
 							registrar()
-						modaldatos.style.display = "none";
 						modal.style.display = "none";
 						}
 					}
