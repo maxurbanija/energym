@@ -40,146 +40,145 @@
 						<h1 class="major">Disciplinas</h1>
 						<p></p>
 						<section>
-							<div class="box" style="margin:0px">
-								<h3>Ingrese los siguientes datos:</h3>
+							<div class="box" style="margin:120px;margin-bottom: 10px;margin-top: 10px">
+								<h3>Primero ingresamos los siguientes datos:</h3>
 									<div class="datos" style="margin:20px">
-											<form method="post" class="4u" action="clientes.html">
-												<input type="text"  placeholder="Disciplina" />
-											</form>
-											<form method="post" class="2u" action="clientes.html">
-												<input type="text"  placeholder="Costo" />
-											</form>
-									</div>
-									<h4>Seleccione los días</h4>
+											<ul>
+												<li>Disciplina:&nbsp;&nbsp;<input  type="text"  style="display: inline-block;width: 12em" /></li>
+												</br>
+												<li>Costo:&nbsp;&nbsp;<input type="text"  placeholder="$" style="display: inline-block;width: 5em"  /></li>
+												</br>
+												<li>Cupo:&nbsp;&nbsp;<input type="text" style="display: inline-block;width: 4em" /></li>
+												</ul>		
+										</div>
+									<h4>Luego seleccione los Días.</h4>
 									<div class="10u 12u$(small)" style="margin:20px">
 										<a onclick="desoculta1(this)" class="checkbox">Lunes</a>&nbsp;&nbsp;&nbsp;
 										<a onclick="desoculta2(this)" class="checkbox">Martes</a>&nbsp;&nbsp;&nbsp;
 										<a onclick="desoculta3(this)" class="checkbox">Miércoles</a>&nbsp;&nbsp;&nbsp;
 										<a onclick="desoculta4(this)" class="checkbox">Jueves</a>&nbsp;&nbsp;&nbsp;
 										<a onclick="desoculta5(this)" class="checkbox">Viernes</a>
-									</div>
-
-									<div id="horario1" class="3u$" style="margin:20px;display:none">
-										<div class="select-wrapper">
-											<h5>Lunes</h5>
-											<select name="horario" id="horario">
-												<option value="">- Horario -</option>
-												<option value="1">08:00 a 09:00</option>
-												<option value="1">09:00 a 10:00</option>
-												<option value="1">10:00 a 11:00</option>
-												<option value="1">11:00 a 12:00</option>
-												<option value="1">12:00 a 13:00</option>
-												<option value="1">13:00 a 14:00</option>
-												<option value="1">14:00 a 15:00</option>
-												<option value="1">15:00 a 16:00</option>
-												<option value="1">16:00 a 17:00</option>
-												<option value="1">17:00 a 18:00</option>
-												<option value="1">18:00 a 19:00</option>
-												<option value="1">19:00 a 20:00</option>
-												<option value="1">20:00 a 21:00</option>
-												<option value="1">21:00 a 22:00</option>
-												<option value="1">22:00 a 23:00</option>
-											</select>
 										</div>
-									</div>
-									<div id="horario2" class="3u$" style="margin:20px;display:none">
-										<div class="select-wrapper">
-											<h5>Martes</h5>
-											<select name="horario" id="horario">
-												<option value="">- Horario -</option>
-												<option value="1">08:00 a 09:00</option>
-												<option value="1">09:00 a 10:00</option>
-												<option value="1">10:00 a 11:00</option>
-												<option value="1">11:00 a 12:00</option>
-												<option value="1">12:00 a 13:00</option>
-												<option value="1">13:00 a 14:00</option>
-												<option value="1">14:00 a 15:00</option>
-												<option value="1">15:00 a 16:00</option>
-												<option value="1">16:00 a 17:00</option>
-												<option value="1">17:00 a 18:00</option>
-												<option value="1">18:00 a 19:00</option>
-												<option value="1">19:00 a 20:00</option>
-												<option value="1">20:00 a 21:00</option>
-												<option value="1">21:00 a 22:00</option>
-												<option value="1">22:00 a 23:00</option>
-											</select>
-										</div>
-									</div>
-									<div id="horario3" class="3u$" style="margin:20px;display:none">
-										<div class="select-wrapper">
-											<h5>Miércoles</h5>
-											<select name="horario" id="horario">
-												<option value="">- Horario -</option>
-												<option value="1">08:00 a 09:00</option>
-												<option value="1">09:00 a 10:00</option>
-												<option value="1">10:00 a 11:00</option>
-												<option value="1">11:00 a 12:00</option>
-												<option value="1">12:00 a 13:00</option>
-												<option value="1">13:00 a 14:00</option>
-												<option value="1">14:00 a 15:00</option>
-												<option value="1">15:00 a 16:00</option>
-												<option value="1">16:00 a 17:00</option>
-												<option value="1">17:00 a 18:00</option>
-												<option value="1">18:00 a 19:00</option>
-												<option value="1">19:00 a 20:00</option>
-												<option value="1">20:00 a 21:00</option>
-												<option value="1">21:00 a 22:00</option>
-												<option value="1">22:00 a 23:00</option>
-											</select>
-										</div>
-									</div>
-									<div id="horario4" class="3u$" style="margin:20px;display:none">
-										<div class="select-wrapper">
-											<h5>Jueves</h5>
-											<select name="horario" id="horario">
-												<option value="">- Horario -</option>
-												<option value="1">08:00 a 09:00</option>
-												<option value="1">09:00 a 10:00</option>
-												<option value="1">10:00 a 11:00</option>
-												<option value="1">11:00 a 12:00</option>
-												<option value="1">12:00 a 13:00</option>
-												<option value="1">13:00 a 14:00</option>
-												<option value="1">14:00 a 15:00</option>
-												<option value="1">15:00 a 16:00</option>
-												<option value="1">16:00 a 17:00</option>
-												<option value="1">17:00 a 18:00</option>
-												<option value="1">18:00 a 19:00</option>
-												<option value="1">19:00 a 20:00</option>
-												<option value="1">20:00 a 21:00</option>
-												<option value="1">21:00 a 22:00</option>
-												<option value="1">22:00 a 23:00</option>
-											</select>
-										</div>
-									</div>
-									<div id="horario5" class="3u$" style="margin:20px;display:none">
-										<div class="select-wrapper">
-											<h5>Viernes</h5>
-											<select name="horario" id="horario">
-												<option value="">- Horario -</option>
-												<option value="1">08:00 a 09:00</option>
-												<option value="1">09:00 a 10:00</option>
-												<option value="1">10:00 a 11:00</option>
-												<option value="1">11:00 a 12:00</option>
-												<option value="1">12:00 a 13:00</option>
-												<option value="1">13:00 a 14:00</option>
-												<option value="1">14:00 a 15:00</option>
-												<option value="1">15:00 a 16:00</option>
-												<option value="1">16:00 a 17:00</option>
-												<option value="1">17:00 a 18:00</option>
-												<option value="1">18:00 a 19:00</option>
-												<option value="1">19:00 a 20:00</option>
-												<option value="1">20:00 a 21:00</option>
-												<option value="1">21:00 a 22:00</option>
-												<option value="1">22:00 a 23:00</option>
-											</select>
-										</div>
-									</div>
+									<h4>Por ultimo, seleccionamos los Horarios.</h4>
+									<ul>
+										<li><div id="horario1" class="3u" style="margin:20px;display:none">
+											<div class="select">
+												<h5>Lunes</h5>
+												<select  style="display: inline-block" name="horario" id="horario" >
+													<option value="">- Horario -</option>
+													<option value="1">08:00 a 09:00</option>
+													<option value="1">09:00 a 10:00</option>
+													<option value="1">10:00 a 11:00</option>
+													<option value="1">11:00 a 12:00</option>
+													<option value="1">12:00 a 13:00</option>
+													<option value="1">13:00 a 14:00</option>
+													<option value="1">14:00 a 15:00</option>
+													<option value="1">15:00 a 16:00</option>
+													<option value="1">16:00 a 17:00</option>
+													<option value="1">17:00 a 18:00</option>
+													<option value="1">18:00 a 19:00</option>
+													<option value="1">19:00 a 20:00</option>
+													<option value="1">20:00 a 21:00</option>
+													<option value="1">21:00 a 22:00</option>
+													<option value="1">22:00 a 23:00</option>
+												</select>			
+											</div>
+											</div></li>
+										<li><div id="horario2" class="3u" style="margin:20px;display:none">
+											<div class="select">
+												<h5>Martes</h5>
+												<select name="horario" id="horario">
+													<option value="">- Horario -</option>
+													<option value="1">08:00 a 09:00</option>
+													<option value="1">09:00 a 10:00</option>
+													<option value="1">10:00 a 11:00</option>
+													<option value="1">11:00 a 12:00</option>
+													<option value="1">12:00 a 13:00</option>
+													<option value="1">13:00 a 14:00</option>
+													<option value="1">14:00 a 15:00</option>
+													<option value="1">15:00 a 16:00</option>
+													<option value="1">16:00 a 17:00</option>
+													<option value="1">17:00 a 18:00</option>
+													<option value="1">18:00 a 19:00</option>
+													<option value="1">19:00 a 20:00</option>
+													<option value="1">20:00 a 21:00</option>
+													<option value="1">21:00 a 22:00</option>
+													<option value="1">22:00 a 23:00</option>
+												</select>
+											</div>
+										</div></li>
+										<li><div id="horario3" class="3u" style="margin:20px;display:none">
+											<div class="select">
+												<h5>Miércoles</h5>
+												<select name="horario" id="horario">
+													<option value="">- Horario -</option>
+													<option value="1">08:00 a 09:00</option>
+													<option value="1">09:00 a 10:00</option>
+													<option value="1">10:00 a 11:00</option>
+													<option value="1">11:00 a 12:00</option>
+													<option value="1">12:00 a 13:00</option>
+													<option value="1">13:00 a 14:00</option>
+													<option value="1">14:00 a 15:00</option>
+													<option value="1">15:00 a 16:00</option>
+													<option value="1">16:00 a 17:00</option>
+													<option value="1">17:00 a 18:00</option>
+													<option value="1">18:00 a 19:00</option>
+													<option value="1">19:00 a 20:00</option>
+													<option value="1">20:00 a 21:00</option>
+													<option value="1">21:00 a 22:00</option>
+													<option value="1">22:00 a 23:00</option>
+												</select>
+											</div>
+										</div></li>
+										<li><div id="horario4" class="3u" style="margin:20px;display:none">
+											<div class="select">
+												<h5>Jueves</h5>
+												<select name="horario" id="horario">
+													<option value="">- Horario -</option>
+													<option value="1">08:00 a 09:00</option>
+													<option value="1">09:00 a 10:00</option>
+													<option value="1">10:00 a 11:00</option>
+													<option value="1">11:00 a 12:00</option>
+													<option value="1">12:00 a 13:00</option>
+													<option value="1">13:00 a 14:00</option>
+													<option value="1">14:00 a 15:00</option>
+													<option value="1">15:00 a 16:00</option>
+													<option value="1">16:00 a 17:00</option>
+													<option value="1">17:00 a 18:00</option>
+													<option value="1">18:00 a 19:00</option>
+													<option value="1">19:00 a 20:00</option>
+													<option value="1">20:00 a 21:00</option>
+													<option value="1">21:00 a 22:00</option>
+													<option value="1">22:00 a 23:00</option>
+												</select>
+											</div>
+										</div></li>
+										<li><div id="horario5" class="3u" style="margin:20px;display:none">
+											<div class="select">
+												<h5>Viernes</h5>
+												<select name="horario" id="horario">
+													<option value="">- Horario -</option>
+													<option value="1">08:00 a 09:00</option>
+													<option value="1">09:00 a 10:00</option>
+													<option value="1">10:00 a 11:00</option>
+													<option value="1">11:00 a 12:00</option>
+													<option value="1">12:00 a 13:00</option>
+													<option value="1">13:00 a 14:00</option>
+													<option value="1">14:00 a 15:00</option>
+													<option value="1">15:00 a 16:00</option>
+													<option value="1">16:00 a 17:00</option>
+													<option value="1">17:00 a 18:00</option>
+													<option value="1">18:00 a 19:00</option>
+													<option value="1">19:00 a 20:00</option>
+													<option value="1">20:00 a 21:00</option>
+													<option value="1">21:00 a 22:00</option>
+													<option value="1">22:00 a 23:00</option>
+												</select>
+											</div>
+										</div></li>
+									</ul>							
 								</div>
-							</div>
-									</br>
-							<div class="align-left">
-								<a href="disciplinas.html" class="button icon fa-save">Guardar</a>
-							</div>
+								<a style="margin-left: 120px;" href="disciplinas.html" class="button icon fa-save">Guardar</a>
 						</section>
 						<br/>
 						<div class="align-center">
