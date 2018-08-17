@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PS: Asistencia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Sidebar -->
+			<section id="sidebar">
+
+				<div class="inner">
+					<img src="../images/ENERGYM-LOGO.png" alt="Logo de Energym" height="40">
+					<br/><br/><br/>
+					<nav>
+						<ul>
+							<li><a >Inicio</a></li>
+							<li><a >Clientes</a></li>
+							<li><a href="#Entrenadores">Entrenadores</a></li>
+							<li><a >Disciplinas</a></li>
+							<li><a >Eventos</a></li>
+							<li><a >Cerrar Sesion</a></li>
+
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+
+			<div id="wrapper">
+				<section id="Entrenadores" class="wrapper">
+
+					<div class="inner">
+						<h1 class="major">Asistencia Entrenadores</h1>
+						<p></p>
+						<section>
+							<div class="" style="align="left"">
+								<a onclick="desoculta(this)" class="button">Historial de Asistencia</a>
+							</div>
+							<div class="align-center">
+								<h4>Nombre:   <code>Santino Zaracho</code></h4>
+								<h4>DNI:   <code>39.999.999</code></h4>
+								<h2></h2>
+								<div style="margin-left: auto;margin-right: auto" class="box 6u">
+										<h3 class="align-center"><i>Asistencia de Hoy</i></h3>
+										<div class="align-left">
+											<h4>Dia:<code>
+												<script type="text/javascript">
+													var d = new Date();
+													document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+												</script>
+													</code></h4>
+											<h4>Disciplina:
+												<select  class="4u" onchange="habcarga(this.options[this.selectedIndex].value)" name="disciplinas" style="display:inline-block;height:30px" id="disciplinas" >
+																<option value="0">- Seleccione -</option>
+>>>>>>> master
+
+																<option value="0" onchange="desocultatur(this.options[this.selectedIndex].value)">No asiste</option>
+																<option value="1">Complemento</option>
+																<option value="1">Funcional</option>
+																<option value="1">Aerobox</option>
+															</select></h4>
+
+											<H4>Justificada
+												<input type="radio" enabled="enabled" id="a29" name="a29">
+												<label for="a29"></label>
+											</H4>
+										</div>
+										<div class="align-center">
+											<button id="cargar" class="button ">Cargar</button>
+										</div>
+								</div>
+							</div>
+							<h3></h3>
+							<div id="historial" class="" style="display:none">
+								<div class="table-wrapper">
+												<table>
+													<thead>
+														<tr>
+															<th>Días</th>
+															<th>Asistió</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>25/06/2018</td>
+															<td>Si</td>
+														</tr>
+														<tr>
+															<td>26/06/2018</td>
+															<td>No</td>
+														</tr>
+														<tr>
+															<td>27/06/2018</td>
+															<td>Si</td>
+														</tr>
+														<tr>
+															<td>28/06/2018</td>
+															<td>No</td>
+														</tr>
+
+												</tbody>
+												<tfoot>
+
+												</tfoot>
+											</table>
+									</div>
+							</div>
+							<br/>
+						</section>
+						<div class="align-center">
+							<a href="entrenadores.html" class="button">Volver</a>
+						</div>
+						<div id="myModal" class="modal">
+						  <div class="modal-content">
+							<span class="close">&times;</span>
+							<h3><img src="images/exito.png" alt="Registrado" width="60px" style="margin-right:20px">La Asistencia se ha Registrado correctamente.</h3>
+							<br/>
+						  </div>
+						</div>
+					</div>
+
+				</section>
+			</div>
+
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">G6 Mates</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script>
+				function desoculta() {
+					var value = document.getElementById("historial").style.display;
+					if (value == "none") {
+						document.getElementById("historial").style.display = "block";
+							} else {
+						document.getElementById("historial").style.display = "none";
+						}
+					}
+			</script>
+			<script>
+				function habcarga(Combo) {
+					var value = Combo;
+					if (value == 1) {
+						document.getElementById("cargar").style.classList.remove("disabled");
+							} else {
+						document.getElementById("cargar").style.classList.add("disabled");
+						}
+					}
+			</script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the button that opens the modal
+				var btn = document.getElementById("cargar");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks the button, open the modal
+				btn.onclick = function() {
+					modal.style.display = "block";
+				}
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+					modal.style.display = "none";
+					window.history.go(-1);
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+						window.history.go(-1);
+					}
+				}
+			</script>
+
+
+	</body>
+</html>
