@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>PG: Nueva Disciplina</title>
+		<title>PG: Ver Disciplina</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -26,7 +26,7 @@
 							<li><a>Empleados</a></li>
 							<li><a>Clientes</a></li>
 							<li><a>Empleados</a></li>
-							<li><a href="#nuevaDisciplina">Disciplinas</a></li>
+							<li><a href="#verDisciplina">Disciplinas</a></li>
 							<li><a>Eventos</a></li>
 						</ul>
 					</nav>
@@ -35,48 +35,48 @@
 
 		<!-- Wrapper -->
 		<div id="wrapper">
-				<section id="nuevaDisciplina" class="wrapper">
+				<section id="verDisciplina" class="wrapper">
 					<div class="inner">
 						<h1 class="major">Disciplinas</h1>
 						<p></p>
 						<section>
 							<div class="box" style="margin:120px;margin-bottom: 10px;margin-top: 10px">
-								<h3>Primero ingresamos los siguientes datos:</h3>
+								<h3><u>Informacion de Disciplina:</u></h3>
 									<div class="datos" style="margin:20px">
 											<ul>
-												<li>Disciplina:&nbsp;&nbsp;<input  type="text"  style="display: inline-block;width: 12em" /></li>
+												<li>Disciplina:&nbsp;&nbsp;<input id="disi"  type="text" disabled  style="display: inline-block;width: 12em" value="Zumba"/></li>
 												</br>
-												<li>Precio:&nbsp;&nbsp;<input type="text"  placeholder="$" style="display: inline-block;width: 5em"  /></li>
+												<li>Precio:&nbsp;&nbsp;<input id="precio" type="text" disabled placeholder="$" style="display: inline-block;width: 5em" value="350"  /></li>
 												</br>
-												<li>Cupo:&nbsp;&nbsp;<input type="text" style="display: inline-block;width: 4em" /></li>
+												<li>Cupo:&nbsp;&nbsp;<input id="cupo" type="text" disabled style="display: inline-block;width: 4em" value="30" /></li>
 												</ul>
 										</div>
-									<h4>Luego seleccione los Días.</h4>
+									<u>Días:</u>
 									<div class="10u 12u$(small)" style="margin:20px">
-										<a onclick="desoculta1(this)" class="checkbox">Lunes</a>&nbsp;&nbsp;&nbsp;
-										<a onclick="desoculta2(this)" class="checkbox">Martes</a>&nbsp;&nbsp;&nbsp;
-										<a onclick="desoculta3(this)" class="checkbox">Miércoles</a>&nbsp;&nbsp;&nbsp;
-										<a onclick="desoculta4(this)" class="checkbox">Jueves</a>&nbsp;&nbsp;&nbsp;
-										<a onclick="desoculta5(this)" class="checkbox">Viernes</a>
+										<a onclick="desoculta1(this)" disabled class="checkbox">Lunes</a>&nbsp;&nbsp;&nbsp;
+										<a onclick="desoculta2(this)" disabled class="checkbox">Martes</a>&nbsp;&nbsp;&nbsp;
+										<a onclick="desoculta3(this)" disabled class="checkbox">Miércoles</a>&nbsp;&nbsp;&nbsp;
+										<a onclick="desoculta4(this)" disabled class="checkbox">Jueves</a>&nbsp;&nbsp;&nbsp;
+										<a onclick="desoculta5(this)" disabled class="checkbox">Viernes</a>
 										</div>
-									<h4>Por ultimo, seleccionamos los Horarios.</h4>
+									<u>Horarios:</u>
 									<ul>
-										<li><div id="horario1" class="3u" style="margin:20px;display:none">
+										<li><div id="horario1"  class="3u" style="margin:20px;display:inline-block">
 											<div class="select">
 												<h5>Lunes</h5>
-												<select  style="display: inline-block" name="horario" id="horario" >
+												<select  disabled name="horario" id="horario11" >
 													<option value="">- Horario -</option>
 													<option value="1">08:00 a 09:00</option>
 													<option value="1">09:00 a 10:00</option>
 													<option value="1">10:00 a 11:00</option>
 													<option value="1">11:00 a 12:00</option>
-													<option value="1">12:00 a 13:00</option>
+													<option value="2">12:00 a 13:00</option>
 													<option value="1">13:00 a 14:00</option>
 													<option value="1">14:00 a 15:00</option>
 													<option value="1">15:00 a 16:00</option>
 													<option value="1">16:00 a 17:00</option>
 													<option value="1">17:00 a 18:00</option>
-													<option value="1">18:00 a 19:00</option>
+													<option selected="selected" value="1">18:00 a 19:00</option>
 													<option value="1">19:00 a 20:00</option>
 													<option value="1">20:00 a 21:00</option>
 													<option value="1">21:00 a 22:00</option>
@@ -87,7 +87,7 @@
 										<li><div id="horario2" class="3u" style="margin:20px;display:none">
 											<div class="select">
 												<h5>Martes</h5>
-												<select name="horario" id="horario">
+												<select name="horario" disabled id="horario22">
 													<option value="">- Horario -</option>
 													<option value="1">08:00 a 09:00</option>
 													<option value="1">09:00 a 10:00</option>
@@ -107,10 +107,10 @@
 												</select>
 											</div>
 										</div></li>
-										<li><div id="horario3" class="3u" style="margin:20px;display:none">
+										<li><div id="horario3"  class="3u" style="margin:20px;display:inline-block">
 											<div class="select">
 												<h5>Miércoles</h5>
-												<select name="horario" id="horario">
+												<select name="horario" disabled id="horario33">
 													<option value="">- Horario -</option>
 													<option value="1">08:00 a 09:00</option>
 													<option value="1">09:00 a 10:00</option>
@@ -122,7 +122,7 @@
 													<option value="1">15:00 a 16:00</option>
 													<option value="1">16:00 a 17:00</option>
 													<option value="1">17:00 a 18:00</option>
-													<option value="1">18:00 a 19:00</option>
+													<option selected="selected" value="1">18:00 a 19:00</option>
 													<option value="1">19:00 a 20:00</option>
 													<option value="1">20:00 a 21:00</option>
 													<option value="1">21:00 a 22:00</option>
@@ -133,7 +133,7 @@
 										<li><div id="horario4" class="3u" style="margin:20px;display:none">
 											<div class="select">
 												<h5>Jueves</h5>
-												<select name="horario" id="horario">
+												<select name="horario" disabled id="horario44">
 													<option value="">- Horario -</option>
 													<option value="1">08:00 a 09:00</option>
 													<option value="1">09:00 a 10:00</option>
@@ -153,10 +153,10 @@
 												</select>
 											</div>
 										</div></li>
-										<li><div id="horario5" class="3u" style="margin:20px;display:none">
+										<li><div id="horario5"  class="3u" style="margin:20px;display:inline-block">
 											<div class="select">
 												<h5>Viernes</h5>
-												<select name="horario" id="horario">
+												<select name="horario" disabled id="horario55">
 													<option value="">- Horario -</option>
 													<option value="1">08:00 a 09:00</option>
 													<option value="1">09:00 a 10:00</option>
@@ -168,7 +168,7 @@
 													<option value="1">15:00 a 16:00</option>
 													<option value="1">16:00 a 17:00</option>
 													<option value="1">17:00 a 18:00</option>
-													<option value="1">18:00 a 19:00</option>
+													<option selected="selected" value="1">18:00 a 19:00</option>
 													<option value="1">19:00 a 20:00</option>
 													<option value="1">20:00 a 21:00</option>
 													<option value="1">21:00 a 22:00</option>
@@ -178,7 +178,11 @@
 										</div></li>
 									</ul>
 								</div>
-								<a style="margin-left: 120px;" href="disciplinas.html" class="button icon fa-save">Guardar</a>
+								<a id="nomodien" onclick="modificare(this);" class="button">Modificar</a>
+								<div id="modien" style="display:none">
+									<a class="button special" onclick="guardare(this);">Guardar</a>
+									<a class="button"	href="disciplinas.html">Cancelar</a>
+								</div>
 						</section>
 						<br/>
 						<div class="align-center">
@@ -205,6 +209,36 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+			<script type="text/javascript">
+			function guardare() {
+				//Botones
+				document.getElementById("modien").style.display = "none";
+				document.getElementById("nomodien").style.display = "block";
+				//Campos
+				document.getElementById("horario11").disabled = true;
+				document.getElementById("horario22").disabled = true;
+				document.getElementById("horario33").disabled = true;
+				document.getElementById("horario44").disabled = true;
+				document.getElementById("horario55").disabled = true;
+				document.getElementById("disi").disabled = true;
+				document.getElementById("precio").disabled = true;
+				document.getElementById("cupo").disabled = true;
+				}
+
+			function modificare() {
+				document.getElementById("nomodien").style.display = "none";
+				document.getElementById("modien").style.display = "block";
+				document.getElementById("horario11").disabled = false;
+				document.getElementById("horario22").disabled = false;
+				document.getElementById("horario33").disabled = false;
+				document.getElementById("horario44").disabled = false;
+				document.getElementById("horario55").disabled = false;
+				document.getElementById("disi").disabled = false;
+				document.getElementById("precio").disabled = false;
+				document.getElementById("cupo").disabled = false;
+
+			}
+			</script>
 			<script>
 			function desoculta1() {
 				var value = document.getElementById("horario1").style.display;
