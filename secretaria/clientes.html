@@ -308,25 +308,23 @@
 										<form class="" action="" method="post">
 											<div class="box" style="margin:60px">
 												<div class="row uniform">
+													<h2>Apellido y Nombre:    <input style="width:12em;display:inline-block" type="text" name="nombre" id="nom"   /></h2>
 													<div class="6u align-left" style="margin:20px">
-
-															<ul class="alt" >
-																<li>Apellido y Nombre:     Sr.<input style="width:12em;display:inline-block" type="text" name="nombre" id="nombre"  value="" /></li>
-																<li>DNI:      <input style="width:12em;display:inline-block" type="text" name="nombre" id="dni"  value="" /></li>
-																<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefono"  value=""/></li>
-																<li>Objetivos: <input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo"  value="" /></li>
-																<li>Fecha de Nacimiento:   <input style="width:12em;display:inline-block" type="date" name="fecnac" id="fecnac"  value="" /></li>
-																<li>Disciplinas Inscriptas: <i>No registra disciplinas por el momento.</i></li>
-																<li>Fecha de Ingreso:      <code>
-																	<script type="text/javascript">
-																		var d = new Date();
-																		document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
-																	</script>
-																		</code></li>
-																<li>Peso Actual(kg):           <input style="width:4em;display:inline-block" type="tel" name="peso" id="peso"  value="" /></li>
-																<li>Altura(cm):                <input style="width:4em;display:inline-block" type="tel" name="alt" id="alt"  value="" /></li>
-															</ul>
-
+														<ul class="alt" >
+															<li><u>Datos Personales:</u></li>
+															<li>DNI:      <code>33.258.259</code></li>
+															<li>Telefono:           <input style="width:10em;display:inline-block" type="tel" name="tel" id="telefon"/></li>
+															<li>Fecha de Nacimiento:<input style="width:10.5em;display:inline-block" type="date" name="fecnac" id="fecna" /></li>
+															<li>Direccion:<input style="width:14em;display:inline-block" type="text" name="dir" id="dir" /></li>
+															<li>Localidad:<input style="width:12em;display:inline-block" type="text" name="loc" id="loc" /></li>
+															<li>Objetivos:<input style="width:20em;display:inline-block" type="text" name="obj" id="objetivo"  /></li>
+															<li>Fecha de Ingreso:      <code>
+																<script type="text/javascript">
+																	var d = new Date();
+																	document.write(d.getDate(),'/'+d.getMonth(),'/'+d.getFullYear());
+																</script>
+																	</code></li>
+														</ul>
 													</div>
 													<div class="4u align-left" style="margin:20px">
 														<li><i>Vencimientos, Eventos, Control de Rutinas y Disciplinas:</i></li>
@@ -461,7 +459,7 @@
 					document.getElementById("fecnac").disabled = false;
 					document.getElementById("dir").disabled = true;
 					document.getElementById("loc").disabled = true;
-					document.getElementById("objetivo").disabled = false;	
+					document.getElementById("objetivo").disabled = false;
 					document.getElementById("dismodi").style.display = "block";
 					document.getElementById("conmodi").style.display = "block";
 					document.getElementById("evemodi").style.display = "block";
@@ -500,20 +498,13 @@
 
 				// When the user clicks anywhere outside of the modal, close it
 				window.onclick = function(event) {
-					if (event.target == modaldatos) {
-						if (infodat.style.display == "none") {
+					if (event.target == modaldatos || event.target == modal) {
+						if (infodat.style.display == "none" || infonue.style.display == "none") {
+							registrar()
 							guarda()}
 						modaldatos.style.display = "none";
 						modal.style.display = "none";
 
-					}else {
-						if (event.target == modal) {
-							if (infonue.style.display == "none") {
-								registrar()
-							modaldatos.style.display = "none";
-							modal.style.display = "none";
-							}
-						}
 					}
 				}
 
