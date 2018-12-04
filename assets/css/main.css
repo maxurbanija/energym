@@ -4020,3 +4020,11 @@ table .color-celda {
 .ml2{
 	margin-left: 20px;
 }
+.popover-title {
+    color: blue;
+    font-size: 15px;
+}
+.popover-content {
+    color: red;
+    font-size: 10px;
+}

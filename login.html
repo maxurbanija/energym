@@ -26,7 +26,7 @@
 							<li><a href="index.html#quienesSomos">Quienes Somos</a></li>
 							<li><a href="index.html#disciplinas">Disciplinas</a></li>
 							<li><a href="index.html#contacto">Contacto</a></li>
-							<li><a href="cliente/consultarseguimiento.html">Consulta Tu Seguimiento</a></li>
+							<li><a href="">Consulta Tu Seguimiento</a></li>
 							<li><a href="#login">Administracion</a></li>
 						</ul>
 					</nav>
@@ -40,20 +40,20 @@
 						<div class="inner">
 							<h1 class="major">Ingresar a Energym</h1>
 							<!-- Datos -->
-								<section>
-									<form method="post" action="autentificacion.php">
+								<section style="margin-left:300px;margin-rigth:300px">
+									<form>
 										<div style="margin:10px"class="row uniform">
 											<div class="box 6u" style="margin:10px">
-												<input style="width:12em;margin-left:80px"   type="text" name="user" id="user" value="" placeholder="Usuario" />
+												<input style="width:12em;margin-left:80px" class="userID" type="text" name="user" id="user" value="" placeholder="Usuario" />
 												</br>
-												<input style="width:12em;margin-left:80px"  type="password" name="pass" id="pass" value="" placeholder="Contraseña" />
+												<input style="width:12em;margin-left:80px" class="password" type="password" name="pass" id="pass" value="" placeholder="Contraseña" />
 												</br>
 												<input type="checkbox" id="recordar" name="recordar">
 												<label for="recordar">Recordar mis Datos</label>
 												</br>
 											</div>
 										</div>
-										<input type="submit" style="margin-left: 130px" value="Iniciar Sesion" class="special" />
+										<a style="margin-left:130px" class="button special login">Iniciar Sesion</a>
 									</form>
 								</section>
 						</div>
@@ -70,6 +70,7 @@
 			</footer>
 
 		<!-- Scripts -->
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -77,6 +78,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="appPrincipal.js"></script>
 
 	</body>
 </html>
