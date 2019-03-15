@@ -16,6 +16,7 @@ $(document).ready(function () {
 });
 
 $(".userID").keyup(function(){
+
   var user = $('.userID').val();
   switch (user) {
     case 'secretaria':
